@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun  6 14:39:50 PDT 2001
+ntupleWriterSvc/src ntupleWriterSvc.cxx
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+set bad value to -99999.0 rather than -99.0
+    *
+------------------------------------------------------------
 TAG activity
 User: heather  Tue May 29 08:48:55 2001
 Tag name: v1
