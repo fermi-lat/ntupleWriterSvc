@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 26 16:13:57 PDT 2003
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+multiple trees, autosave; tagging v3r3
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 26 13:47:56 PDT 2003
 ntupleWriterSvc/src
 
