@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Thu Jun 28 16:24:21 PDT 2001
+ntupleWriterSvc/src/Dll ntupleWriterSvc_load.cxx
+
+Modified Files:
+	ntupleWriterSvc_load.cxx 
+Log Message:
+Changes for new alg.
+
+    *
+------------------------------------------------------------
 User: igable  Thu Jun 28 16:23:42 PDT 2001
 ntupleWriterSvc/src WriteTupleAlg.cxx
 
