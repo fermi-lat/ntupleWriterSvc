@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 27 12:29:50 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h INTupleWriterSvc.h
+
+Modified Files:
+	ntupleWriterSvc.h INTupleWriterSvc.h 
+Log Message:
+add in a new interface method to force writing of alll ntuples to disk
+    *
+------------------------------------------------------------
 User: heather  Tue Jun 26 13:43:21 PDT 2001
 ntupleWriterSvc/doc release.notes
 
