@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: heather  Tue May 15 07:15:01 PDT 2001
+ntupleWriterSvc/doc - New directory
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/doc added to the repository
+
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 06:30:02 PDT 2001
 ntupleWriterSvc/src/test writeJunkAlg.cxx
 
