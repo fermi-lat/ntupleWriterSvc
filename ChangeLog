@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Aug 25 18:10:29 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+try to fix Johann's fix
+    *
+------------------------------------------------------------
 User: burnett  Mon Aug 25 14:49:34 PDT 2003
 ntupleWriterSvc/doc
 
