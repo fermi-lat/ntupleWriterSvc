@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 13 11:05:10 PST 2002
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h ntupleWriterSvc.h 
+Removed Files:
+	mainpage.h 
+Log Message:
+update to conform to GLAST code doc rules
+    *
+------------------------------------------------------------
 User: heather  Wed Feb 13 11:03:40 PST 2002
 ntupleWriterSvc/doc
 
