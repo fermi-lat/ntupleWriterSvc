@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Sun Aug 17 10:33:41 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+sprintf expect a POD as argument, EventInteger is too much of a complex class for it, so it sends a non-POD warning
+    *
+------------------------------------------------------------
 User: cohen  Sun Aug 17 09:27:45 PDT 2003
 ntupleWriterSvc/src
 
