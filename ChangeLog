@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr  9 13:53:42 PDT 2002
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update to use facilities
+    *
+------------------------------------------------------------
 User: heather  Mon Apr  8 14:14:02 PDT 2002
 ntupleWriterSvc/src
 
