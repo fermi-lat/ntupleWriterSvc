@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 20 11:27:08 PDT 2004
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging after conversion to new GlastPolicy
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 26 10:26:26 PST 2004
 ntupleWriterSvc/src/test
 
