@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Wed May 16 07:28:39 PDT 2001
+ntupleWriterSvc/cmt requirements requirements.bak
+
+Modified Files:
+	requirements 
+Removed Files:
+	requirements.bak 
+Log Message:
+
+Clean up requirements files and remove non-essential dependencies.
+    *
+------------------------------------------------------------
 TAG activity
 User: heather  Tue May 15 08:14:39 2001
 Tag name: v0r1p0
