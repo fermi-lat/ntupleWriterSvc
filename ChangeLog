@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul 24 19:41:13 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+had to use sprintf to get it to work
+    *
+------------------------------------------------------------
 User: burnett  Wed Jul 23 09:38:01 PDT 2003
 ntupleWriterSvc/src/test
 
