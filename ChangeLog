@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 27 12:31:36 PDT 2001
+ntupleWriterSvc/doc release.notes
+
+Modified Files:
+	release.notes 
+Log Message:
+update comments
+    *
+------------------------------------------------------------
 User: heather  Wed Jun 27 12:30:45 PDT 2001
 ntupleWriterSvc/src/test writeJunkAlg.cxx jobOptions.txt
 
