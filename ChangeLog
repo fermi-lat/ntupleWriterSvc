@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Dec  4 22:41:09 PST 2004
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+check TFile::IsOpen in RootTupleSvc
+    *
+------------------------------------------------------------
 User: kuss  Tue Sep 21 08:12:45 PDT 2004
 ntupleWriterSvc/src/test
 
