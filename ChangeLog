@@ -1,0 +1,32 @@
+------------------------------------------------------------
+User: heather  Mon May 14 16:09:01 PDT 2001
+ntupleWriterSvc - Imported sources
+
+Log Message:
+replaces ntupleWriter - hopefully the import will work correctly 
+this time.
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N ntupleWriterSvc/.cvsignore
+N ntupleWriterSvc/src/ntupleWriterSvc.cxx
+N ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx
+N ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx
+N ntupleWriterSvc/src/test/jobOptions.txt
+N ntupleWriterSvc/src/test/test_ntupleWriterSvc.cxx
+N ntupleWriterSvc/src/test/writeJunkAlg.cxx
+N ntupleWriterSvc/cmt/Makefile
+N ntupleWriterSvc/cmt/NMake
+N ntupleWriterSvc/cmt/requirements
+N ntupleWriterSvc/cmt/cleanup.bat
+N ntupleWriterSvc/cmt/requirements.bak
+N ntupleWriterSvc/cmt/.cvsignore
+N ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h
+N ntupleWriterSvc/ntupleWriterSvc/INtupleWriterSvc.h
+
+No conflicts created by this import
+
+    *
