@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Aug 25 14:44:37 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+apply Heather's magic to fix root bug when writing large files
+    *
+------------------------------------------------------------
 User: cohen  Sun Aug 17 10:33:41 PDT 2003
 ntupleWriterSvc/src
 
