@@ -1,3 +1,6 @@
+/** @file WriteTupleAlg.cxx
+
+*/
 #include "GaudiKernel/Algorithm.h"
 
 #include "GaudiKernel/MsgStream.h"
@@ -12,7 +15,7 @@
 /** @class WriteTupleAlg
  * @brief Test routine for the ntupleWriterSvc
  * 
- * $Header$
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/WriteTupleAlg.cxx,v 1.2 2002/04/08 21:14:02 heather Exp $
 */
 class WriteTupleAlg : public Algorithm
 {   
@@ -49,10 +52,9 @@ StatusCode WriteTupleAlg::initialize() {
     setProperties();
     
 
-    sc = service("ntupleWriterSvc", m_ntupleWriterSvc);
+    sc = service("RootTupleSvc", m_ntupleWriterSvc);
     
-    if(sc.isFailure())
-    {
+    if(sc.isFailure())    {
         log << MSG::ERROR << "Could not locate the ntupleSvc" <<endreq;
     }
 
@@ -64,22 +66,11 @@ StatusCode WriteTupleAlg::initialize() {
 
 StatusCode WriteTupleAlg::execute() {
 
+    // this is all this does, make sure that the tuple is saved
+    m_ntupleWriterSvc->storeRowFlag(true);
     
     MsgStream   log( msgSvc(), name() );
     StatusCode  sc = StatusCode::SUCCESS;
-
-    sc = m_ntupleWriterSvc->saveNTuples();
-    if(sc.isFailure())
-    {
-        log << MSG::ERROR << "Failed to save the ntuples" << endreq;
-    }
-    /*
-        m_count++;
-    if(m_count == 10)
-    {
-        return StatusCode::FAILURE;
-    }
-    */
 
     return sc;
 }
