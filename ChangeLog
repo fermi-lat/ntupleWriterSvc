@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jul 21 23:18:19 PDT 2004
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+address CMT-25 JIRA
+    *
+------------------------------------------------------------
 User: burnett  Tue Jun 22 11:48:51 PDT 2004
 ntupleWriterSvc/doc
 
