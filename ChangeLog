@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jun 28 09:11:04 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h
+
+Modified Files:
+	ntupleWriterSvc.h 
+Log Message:
+fixed capitalization
+    *
+------------------------------------------------------------
 User: heather  Wed Jun 27 12:31:36 PDT 2001
 ntupleWriterSvc/doc release.notes
 
