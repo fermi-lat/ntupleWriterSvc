@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: kyoung  Wed Jun 20 15:00:29 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc INTupleWriterSvc.h INtupleWriterSvc.h
+
+Added Files:
+	INTupleWriterSvc.h 
+Removed Files:
+	INtupleWriterSvc.h 
+Log Message:
+Renamed INtupleWriterSvc.h to INTupleWriterSvc.h
+    *
+------------------------------------------------------------
 TAG activity
 User: heather  Mon Jun 18 09:05:07 2001
 Tag name: v1r2
