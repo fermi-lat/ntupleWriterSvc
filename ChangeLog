@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Aug  9 15:54:44 PDT 2004
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+add floats, ints, and arrays; clean up documentation; tag v3r6
+    *
+------------------------------------------------------------
+User: burnett  Mon Aug  9 15:54:44 PDT 2004
 ntupleWriterSvc/src
 
 Modified Files:
