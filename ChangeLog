@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+TAG activity
+User: heather  Tue May 15 08:14:37 2001
+Tag name: v0r1p0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 08:13:41 PDT 2001
 ntupleWriterSvc/src/test writeJunkAlg.cxx
 
