@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Mar 18 12:13:41 PST 2005
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Patch to allow filling by setting flag in an alg's finalize().
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r6p0, operation: add
 Package: ntupleWriterSvc
