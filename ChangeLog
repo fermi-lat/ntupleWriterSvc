@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Oct 21 03:22:07 PDT 2003
+ntupleWriterSvc/doc
+
+Added Files:
+	RootWriterSvc.htm 
+Log Message:
+update docs--will move tag
+    *
+------------------------------------------------------------
+User: burnett  Tue Oct 21 03:22:07 PDT 2003
 ntupleWriterSvc/src
 
 Modified Files:
