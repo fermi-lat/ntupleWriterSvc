@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 27 12:30:45 PDT 2001
+ntupleWriterSvc/src/test writeJunkAlg.cxx jobOptions.txt
+
+Modified Files:
+	writeJunkAlg.cxx jobOptions.txt 
+Log Message:
+add in a new interface method to force writing of alll ntuples to disk
+    *
+------------------------------------------------------------
 User: heather  Wed Jun 27 12:30:16 PDT 2001
 ntupleWriterSvc/src ntupleWriterSvc.cxx
 
