@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Wed Jan 15 10:07:28 PST 2003
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Removed Files:
+	test_ntupleWriterSvc.cxx 
+Log Message:
+updates for GlastRelease, and remove unnecessary main routine
+    *
+------------------------------------------------------------
 User: heather  Wed Jan 15 10:06:16 PST 2003
 ntupleWriterSvc/doc
 
