@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: kuss  Tue Sep 21 08:10:53 PDT 2004
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx checkSum.cxx checkSum.h 
+Log Message:
+some clean-up of code, and a new little test program
+
+    *
+------------------------------------------------------------
+User: kuss  Tue Sep 21 08:10:53 PDT 2004
 ntupleWriterSvc/cmt
 
 Modified Files:
