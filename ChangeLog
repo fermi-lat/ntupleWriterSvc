@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Jun 22 11:46:41 PDT 2004
+ntupleWriterSvc/src/Dll
+
+Modified Files:
+	ntupleWriterSvc_load.cxx 
+Log Message:
+Remove ntupleWriterSvc, since we only use RootTupleSvc
+    *
+------------------------------------------------------------
+User: burnett  Tue Jun 22 11:46:41 PDT 2004
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
