@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Jan 21 06:43:58 PST 2004
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Put detailed RootTupleSvc output as debug; clear ROOT's signal handling; tag v3r4p1
+    *
+------------------------------------------------------------
+User: burnett  Wed Jan 21 06:43:58 PST 2004
 ntupleWriterSvc/doc
 
 Modified Files:
