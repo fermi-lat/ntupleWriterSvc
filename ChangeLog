@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Thu Jun 28 15:34:51 PDT 2001
+ntupleWriterSvc/src/test writeJunkAlg.cxx
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+Might have discovered a problem
+
+    *
+------------------------------------------------------------
 User: heather  Thu Jun 28 09:11:04 PDT 2001
 ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h
 
