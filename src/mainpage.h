@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/mainpage.h,v 1.1 2001/05/16 14:42:41 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.1 2002/02/13 19:06:48 heather Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -9,6 +9,8 @@
  * algorithms use the ntupleWriterSvc to submit entries into the
  * standard GLAST ntuple.
  * For more information see the <a href=../ntupleWriterSvc.htm>manual</a>.
+
+ * <br>An additional posibility for ROOT tuples is the service RootTupleSvc
  * <hr>
  * @section notes release notes
  * release.notes
