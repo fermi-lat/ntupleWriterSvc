@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 15 08:13:41 PDT 2001
+ntupleWriterSvc/src/test writeJunkAlg.cxx
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+test handling of NaN and inf
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 08:13:02 PDT 2001
 ntupleWriterSvc/src ntupleWriterSvc.cxx
 
