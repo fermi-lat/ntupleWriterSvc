@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr  8 14:13:20 PDT 2002
+ntupleWriterSvc/src/Dll
+
+Modified Files:
+	ntupleWriterSvc_load.cxx ntupleWriterSvc_dll.cxx 
+Log Message:
+upgrade loading as shown in Gaudi v9
+    *
+------------------------------------------------------------
 User: heather  Mon Apr  8 14:12:51 PDT 2002
 ntupleWriterSvc/ntupleWriterSvc
 
