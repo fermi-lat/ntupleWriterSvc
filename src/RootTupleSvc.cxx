@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.20 2004/09/21 15:10:53 kuss Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.21 2004/12/05 06:43:29 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -275,6 +275,7 @@ void RootTupleSvc::endEvent()
         if( m_storeAll || m_storeTree[it->first]  ) {
             TTree* t = it->second;
             t->Fill();
+            m_storeTree[it->first]=false; 
             // doing the checksum here
             std::string treeName = t->GetName();
             if ( m_checkSum->is_open() && treeName == "MeritTuple" ) {
@@ -308,6 +309,7 @@ StatusCode RootTupleSvc::finalize ()
 
     for( std::map<std::string, TTree*>::iterator it = m_tree.begin(); it!=m_tree.end(); ++it){
         TTree* t = it->second; 
+        if( m_storeTree[it->first] ) t->Fill(); // In case the algorithm did an entry during its finalize
 
         if( t->GetEntries() ==0 ) {
 
