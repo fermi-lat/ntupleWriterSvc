@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Dec  4 22:43:29 PST 2004
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+check TFile::IsOpen in RootTupleSvc
+    *
+------------------------------------------------------------
 User: heather  Sat Dec  4 22:41:18 PST 2004
 ntupleWriterSvc/doc
 
