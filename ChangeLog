@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Sep 10 18:14:17 PDT 2002
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix wildcard for use facilities
+    *
+------------------------------------------------------------
 User: heather  Wed Apr 24 12:50:56 PDT 2002
 ntupleWriterSvc/cmt
 
