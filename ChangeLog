@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 15 07:17:02 PDT 2001
+ntupleWriterSvc/src/test jobOptions.txt
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+modify the job options to remove my specific path
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 07:15:40 PDT 2001
 ntupleWriterSvc/doc ntupleWriterSvc.htm
 
