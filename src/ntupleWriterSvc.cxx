@@ -1,5 +1,5 @@
 // File and Version Information:
-//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.14 2003/07/23 16:38:01 burnett Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.15 2003/07/25 02:41:13 burnett Exp $
 //
 // Description:
 //      This is a GLAST Gaudi service used as an interface to the
@@ -331,7 +331,7 @@ int ntupleWriterSvc::isFinite(float val) {
 #ifdef WIN32 
     return (_finite(val));  // Win32 call available in float.h
 #else
-    return (isfinite(val)); // gcc call available in math.h
+    return (std::isfinite(val)); // gcc call available in math.h
 #endif
 
 }
