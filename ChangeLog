@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Mon May 31 07:56:11 PDT 2004
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+implementation of a simple check sum.  Also, fixes compiler warnings.
+
+    *
+------------------------------------------------------------
 User: kuss  Mon May 31 07:56:10 PDT 2004
 ntupleWriterSvc/ntupleWriterSvc
 
