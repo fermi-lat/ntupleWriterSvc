@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: igable  Sun Jul 15 15:06:29 PDT 2001
+ntupleWriterSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+headers pattern
+    *
+------------------------------------------------------------
 User: igable  Thu Jun 28 16:24:21 PDT 2001
 ntupleWriterSvc/src/Dll ntupleWriterSvc_load.cxx
 
