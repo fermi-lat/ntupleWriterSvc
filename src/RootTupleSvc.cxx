@@ -25,7 +25,7 @@
 * @brief Special service that directly writes ROOT tuples
 *
 * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
-* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.12 2003/10/11 04:50:44 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.13 2003/10/21 09:15:08 burnett Exp $
 */
 class RootTupleSvc :  public Service, virtual public IIncidentListener,
     virtual public INTupleWriterSvc
@@ -155,9 +155,9 @@ StatusCode RootTupleSvc::initialize ()
     // -- set up the tuple ---
     m_tf   = new TFile( m_filename.value().c_str(), "RECREATE");
     // with the default treename, and default title
-    TTree* t = new TTree( m_treename.value().c_str(),  m_title.value().c_str() );
-    m_tree[m_treename.value().c_str()] = t;
-    t->SetAutoSave(m_autoSave); 
+    //TTree* t = new TTree( m_treename.value().c_str(),  m_title.value().c_str() );
+    //m_tree[m_treename.value().c_str()] = t;
+    //t->SetAutoSave(m_autoSave); 
 
     return status;
 }
@@ -245,7 +245,7 @@ StatusCode RootTupleSvc::finalize ()
                 << " with " 
                 << t->GetEntries() << " rows (" << m_trials << " total events)"<< endreq;
             t->Print(); // make a summary
-            t->Write();
+            //t->Write();
         }
     }
 
