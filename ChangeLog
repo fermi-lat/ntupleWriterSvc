@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jun 26 13:31:18 PDT 2001
+ntupleWriterSvc/src ntupleWriterSvc.cxx
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+store the number of generated events in the TNtuple title
+    *
+------------------------------------------------------------
 User: heather  Tue Jun 26 13:30:39 PDT 2001
 ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h
 
