@@ -1,5 +1,5 @@
 // File and Version Information:
-//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.13 2003/01/15 18:08:12 heather Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.14 2003/07/23 16:38:01 burnett Exp $
 //
 // Description:
 //      This is a GLAST Gaudi service used as an interface to the
@@ -25,6 +25,7 @@
 
 #include "ntupleWriterSvc/ntupleWriterSvc.h"
 
+#include <stdio.h> // for fprintf (ugh)
 #include <string>
 #include <vector>
 
@@ -96,12 +97,11 @@ StatusCode ntupleWriterSvc::initialize ()
     if (status.isFailure()) return status;
     
     // setup the title
-    std::string title("gen(");
-    std::string numEvents;
-    facilities::Util::itoa(evtMax, numEvents);
-    title += numEvents;
-    title += ")";
 
+    char buf[20];
+    sprintf(buf, "gen(%d)", evtMax);
+
+    std::string title(buf);
     // Setup the ntuples asked for in the job options file
     unsigned int index = 0;
     for (index = 0; index < m_tuple_name.size(); index++) {
@@ -109,9 +109,10 @@ StatusCode ntupleWriterSvc::initialize ()
         // store the id for this ntuple
         m_TDS_tuple_name.push_back("/");
         // convert the id number into a string and append to the path name
-        std::string tdsName;
-        facilities::Util::itoa(m_tupleCounter, tdsName);
-        m_TDS_tuple_name[index] += tdsName;
+
+	sprintf(buf, "%d", m_tupleCounter);
+
+        m_TDS_tuple_name[index] += std::string(buf);
 
         // Try to book the ntuple
         if( !m_tuple_name[index].empty() ) {
