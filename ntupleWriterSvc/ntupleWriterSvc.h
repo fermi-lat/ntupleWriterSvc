@@ -24,7 +24,7 @@ template <class TYPE> class SvcFactory;
  * ntupleWriterSvc clears the ntuple.  At the end of each event, the service
  * write to the ntuple in memory.
  * 
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.10 2002/04/08 21:12:51 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.11 2003/07/23 16:38:01 burnett Exp $
  */
 class ntupleWriterSvc :  public Service, virtual public IIncidentListener,
                         virtual public INTupleWriterSvc
@@ -50,7 +50,11 @@ public:
    /// add a new item to an ntuple
    virtual StatusCode addItem(const char *tupleName, const char *item, double val);
 
-     /// special version that adds a <EM>pointer</EM> to an item
+   /**
+        @param tupleName name of the tuple 
+        @param itemName 
+        @param val  pointer to the value, which must be defined 
+   */
     virtual StatusCode addItem(const std::string & tupleName, const std::string& itemName, const double* val);
 
    /// force writing of the ntuple to disk
