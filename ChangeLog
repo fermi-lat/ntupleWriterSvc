@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Aug  5 16:07:16 PDT 2003
+ntupleWriterSvc/src/test
+
+Modified Files:
+	jobOptions.txt writeJunkAlg.cxx 
+Log Message:
+Provide store flag, so that a client may have to request an event be stored.
+    *
+------------------------------------------------------------
+User: burnett  Tue Aug  5 16:07:16 PDT 2003
 ntupleWriterSvc/src
 
 Modified Files:
