@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 26 11:21:18 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+convert to double, with Heather's help.
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 26 11:05:23 PDT 2003
 ntupleWriterSvc/src
 
