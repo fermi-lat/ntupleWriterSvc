@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 26 10:26:26 PST 2004
+ntupleWriterSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+spelling error in RootTupleSvc parameter
+    *
+------------------------------------------------------------
 User: burnett  Wed Jan 21 06:43:58 PST 2004
 ntupleWriterSvc/src
 
