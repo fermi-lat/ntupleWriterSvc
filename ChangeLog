@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 26 13:47:56 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+make an integer property AutoSave for TTree.
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 26 11:21:18 PDT 2003
 ntupleWriterSvc/src
 
