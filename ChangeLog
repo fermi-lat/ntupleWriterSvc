@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Nov 15 21:30:20 PST 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+remove default TTree and write once in finalize
+    *
+------------------------------------------------------------
 User: heather  Sat Nov 15 21:29:46 PST 2003
 ntupleWriterSvc/cmt
 
