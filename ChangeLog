@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Jun 15 12:25:18 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h INtupleWriterSvc.h
+
+Modified Files:
+	ntupleWriterSvc.h INtupleWriterSvc.h 
+Log Message:
+add flag to allow users to determine whether a row will be stored
+to the ntuple or not
+    *
+------------------------------------------------------------
 User: heather  Wed Jun  6 14:39:50 PDT 2001
 ntupleWriterSvc/src ntupleWriterSvc.cxx
 
