@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Sep 26 11:02:21 PDT 2003
+ntupleWriterSvc/src/test
+
+Modified Files:
+	jobOptions.txt writeJunkAlg.cxx 
+Log Message:
+allow multiple trees in a single file
+    *
+------------------------------------------------------------
+User: burnett  Fri Sep 26 11:02:21 PDT 2003
 ntupleWriterSvc/src
 
 Modified Files:
