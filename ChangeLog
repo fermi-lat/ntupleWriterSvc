@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Oct 10 21:50:44 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+change directories when adding new TTree
+    *
+------------------------------------------------------------
 User: heather  Fri Oct 10 21:50:24 PDT 2003
 ntupleWriterSvc/doc
 
