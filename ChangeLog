@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 15 08:12:54 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h
+
+Modified Files:
+	ntupleWriterSvc.h 
+Log Message:
+handle NaN and inf 
+    *
+------------------------------------------------------------
 TAG activity
 User: heather  Tue May 15 07:17:38 2001
 Tag name: v0r1
