@@ -3,6 +3,14 @@ TAG activity
 User: heather  Tue May 15 08:14:38 2001
 Tag name: v0r1p0
 Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/Dll
+File(s) and revision(s): ntupleWriterSvc_dll.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Tue May 15 08:14:38 2001
+Tag name: v0r1p0
+Tag operation: add
 Repository: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src
 File(s) and revision(s): ntupleWriterSvc.cxx
     *
