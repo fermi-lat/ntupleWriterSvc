@@ -1,5 +1,5 @@
 // File and Version Information:
-//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.11 2002/04/08 21:14:02 heather Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.12 2002/04/09 20:54:50 heather Exp $
 //
 // Description:
 //      This is a GLAST Gaudi service used as an interface to the
@@ -219,7 +219,7 @@ StatusCode ntupleWriterSvc::finalize ()
 {
     StatusCode  status = StatusCode::SUCCESS;
        
-    status = saveNTuples();
+    //status = saveNTuples();
     return status;
 }
 
