@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: burnett  Wed Jul 23 09:38:01 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	mainpage.h ntupleWriterSvc.cxx 
+Added Files:
+	RootTupleSvc.cxx 
+Log Message:
+add new function to inteface to allow passing pointer to a double
+implemnt root-only service RootTupleSvc
+add to test.
+    *
+------------------------------------------------------------
+User: burnett  Wed Jul 23 09:38:01 PDT 2003
 ntupleWriterSvc/src/Dll
 
 Modified Files:
