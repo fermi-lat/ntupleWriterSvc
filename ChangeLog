@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Tue Sep 21 08:10:53 PDT 2004
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+some clean-up of code, and a new little test program
+
+    *
+------------------------------------------------------------
 User: kuss  Mon Sep 20 07:31:47 PDT 2004
 ntupleWriterSvc/src
 
