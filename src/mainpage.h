@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.2 2003/07/23 16:38:01 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.3 2003/10/21 09:15:08 burnett Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -11,7 +11,8 @@
  * For more information see the <a href=../ntupleWriterSvc.htm>manual</a>.
 
  * <br>(T. Burnett) An additional posibility for ROOT tuples is the service RootTupleSvc. It allows for multiple trees, and has only a setup phase:
- one defines the tuple at initialization time, with pointers to the tuple values.
+ one defines the tuple at initialization time, with pointers to the tuple values. For more information about this, see the 
+ <a href=../RootWriterSvc.htm> supplemental manual</a>
  * <hr>
  * @section notes release notes
  * release.notes
