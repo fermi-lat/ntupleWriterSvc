@@ -24,7 +24,7 @@
 * @class RootTupleSvc
 * @brief Special service that directly writes ROOT tuples
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.2 2003/08/05 23:07:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.3 2003/08/25 21:44:37 burnett Exp $
 */
 class RootTupleSvc :  public Service, virtual public IIncidentListener,
     virtual public INTupleWriterSvc
@@ -109,7 +109,7 @@ RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
 : Service(name,svc), m_trials(0)
 {
     // declare the properties and set defaults
-    declareProperty("filename",  m_filename="glast.root");
+    declareProperty("filename",  m_filename="RootTupleSvc.root");
     declareProperty("treename", m_treename="1");
     declareProperty("title", m_title="Glast tuple");
     declareProperty("defaultStoreFlag", m_defaultStoreFlag=false);
