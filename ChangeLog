@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 13 11:03:40 PST 2002
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+update to conform to GLAST code doc rules
+    *
+------------------------------------------------------------
 User: igable  Sun Jul 15 15:06:29 PDT 2001
 ntupleWriterSvc/cmt requirements
 
