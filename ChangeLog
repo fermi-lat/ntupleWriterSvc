@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Mar 18 12:13:41 PST 2005
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Patch to allow filling by setting flag in an alg's finalize().
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 18 12:13:41 PST 2005
 ntupleWriterSvc/cmt
 
 Modified Files:
