@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed May 16 07:28:55 PDT 2001
+ntupleWriterSvc/src/test jobOptions.txt writeJunkAlg.cxx
+
+Modified Files:
+	jobOptions.txt writeJunkAlg.cxx 
+Log Message:
+
+Clean up requirements files and remove non-essential dependencies.
+    *
+------------------------------------------------------------
 User: burnett  Wed May 16 07:28:52 PDT 2001
 ntupleWriterSvc/src ntupleWriterSvc.cxx
 
