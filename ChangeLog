@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 26 11:05:23 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+fix info output.
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 26 11:02:21 PDT 2003
 ntupleWriterSvc/src/test
 
