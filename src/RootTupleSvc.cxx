@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.18 2004/08/09 22:54:44 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.20 2004/09/21 15:10:53 kuss Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -179,6 +179,12 @@ StatusCode RootTupleSvc::initialize ()
 
     // -- set up the tuple ---
     m_tf   = new TFile( m_filename.value().c_str(), "RECREATE");
+    if (!m_tf->IsOpen()) {
+        log << MSG::ERROR 
+            << "cannot open ROOT file: " << m_filename.value() << endreq;
+        delete m_tf;
+        return StatusCode::FAILURE;
+    }
     // with the default treename, and default title
     //TTree* t = new TTree( m_treename.value().c_str(),  m_title.value().c_str() );
     //m_tree[m_treename.value().c_str()] = t;
