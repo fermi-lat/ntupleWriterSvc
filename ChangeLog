@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 13 11:06:48 PST 2002
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Added Files:
+	mainpage.h 
+Log Message:
+remove itoa, replace with ostringstream and move mainpage to src
+directory
+    *
+------------------------------------------------------------
 User: heather  Wed Feb 13 11:05:10 PST 2002
 ntupleWriterSvc/ntupleWriterSvc
 
