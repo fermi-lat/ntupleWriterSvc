@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Sun Aug 17 09:27:45 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+fix gcc3.2
+    *
+------------------------------------------------------------
 User: burnett  Tue Aug  5 16:10:10 PDT 2003
 ntupleWriterSvc/doc
 
