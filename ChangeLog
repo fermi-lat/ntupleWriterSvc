@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Mon May 31 07:56:10 PDT 2004
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	ntupleWriterSvc.h 
+Log Message:
+implementation of a simple check sum.  Also, fixes compiler warnings.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr 20 11:27:08 PDT 2004
 ntupleWriterSvc/doc
 
