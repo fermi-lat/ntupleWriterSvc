@@ -1,5 +1,5 @@
 // File and Version Information:
-//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.15 2003/07/25 02:41:13 burnett Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/ntupleWriterSvc.cxx,v 1.16 2003/08/17 16:27:45 cohen Exp $
 //
 // Description:
 //      This is a GLAST Gaudi service used as an interface to the
@@ -99,7 +99,7 @@ StatusCode ntupleWriterSvc::initialize ()
     // setup the title
 
     char buf[20];
-    sprintf(buf, "gen(%d)", evtMax);
+    sprintf(buf, "gen(%d)", evtMax.value());
 
     std::string title(buf);
     // Setup the ntuples asked for in the job options file
