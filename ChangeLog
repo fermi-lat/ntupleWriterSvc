@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 13 11:08:37 PST 2002
+ntupleWriterSvc/src/test
+
+Modified Files:
+	test_ntupleWriterSvc.cxx writeJunkAlg.cxx 
+Log Message:
+update documentation
+    *
+------------------------------------------------------------
 User: heather  Wed Feb 13 11:07:39 PST 2002
 ntupleWriterSvc/src/Dll
 
