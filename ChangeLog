@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Aug 25 18:12:49 PDT 2003
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tagging v3r2p2
+    *
+------------------------------------------------------------
+User: burnett  Mon Aug 25 18:12:49 PDT 2003
 ntupleWriterSvc/cmt
 
 Modified Files:
