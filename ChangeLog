@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 15 06:29:49 PDT 2001
+ntupleWriterSvc/src ntupleWriterSvc.cxx
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+clean up and improve the interface
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 06:29:29 PDT 2001
 ntupleWriterSvc/ntupleWriterSvc INtupleWriterSvc.h ntupleWriterSvc.h
 
