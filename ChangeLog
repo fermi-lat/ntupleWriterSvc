@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jun 26 13:30:39 PDT 2001
+ntupleWriterSvc/ntupleWriterSvc ntupleWriterSvc.h
+
+Modified Files:
+	ntupleWriterSvc.h 
+Log Message:
+set TNtuple title 
+    *
+------------------------------------------------------------
 User: kyoung  Wed Jun 20 15:00:29 PDT 2001
 ntupleWriterSvc/ntupleWriterSvc INTupleWriterSvc.h INtupleWriterSvc.h
 
