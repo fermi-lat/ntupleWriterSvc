@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed May 16 07:28:52 PDT 2001
+ntupleWriterSvc/src ntupleWriterSvc.cxx
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+
+Clean up requirements files and remove non-essential dependencies.
+    *
+------------------------------------------------------------
 User: burnett  Wed May 16 07:28:50 PDT 2001
 ntupleWriterSvc/ntupleWriterSvc INtupleWriterSvc.h ntupleWriterSvc.h
 
