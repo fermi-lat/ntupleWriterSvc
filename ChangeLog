@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Aug 29 08:25:12 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+change default root filename.
+    *
+------------------------------------------------------------
 User: burnett  Mon Aug 25 18:12:49 PDT 2003
 ntupleWriterSvc/doc
 
