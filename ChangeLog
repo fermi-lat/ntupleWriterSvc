@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Oct 21 02:15:08 PDT 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx mainpage.h 
+Log Message:
+add feature to interface to allow a RootTupleSvc client to choose which TTree to write. (No change to ntupleWriterSvc).
+    *
+------------------------------------------------------------
+User: burnett  Tue Oct 21 02:15:08 PDT 2003
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
