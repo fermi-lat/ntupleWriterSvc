@@ -24,7 +24,7 @@
 * @class RootTupleSvc
 * @brief Special service that directly writes ROOT tuples
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.5 2003/08/29 22:30:00 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.6 2003/09/26 18:02:21 burnett Exp $
 */
 class RootTupleSvc :  public Service, virtual public IIncidentListener,
     virtual public INTupleWriterSvc
@@ -157,7 +157,7 @@ StatusCode RootTupleSvc::addItem(const std::string & tupleName,
     if( m_tree.find(treename)==m_tree.end()){
         // create new tree
         m_tree[treename]=new TTree(treename.c_str(), m_title.value().c_str());
-        log << "Creating new tree " << treename << endreq;
+        log << MSG::INFO << "Creating new tree " << treename << endreq;
     }
     m_tree[treename]->Branch(itemName.c_str(), &m_floats.back(), itemName.c_str());
     m_pdoubles.push_back(val);
