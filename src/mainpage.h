@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.1 2002/02/13 19:06:48 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.2 2003/07/23 16:38:01 burnett Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -10,7 +10,8 @@
  * standard GLAST ntuple.
  * For more information see the <a href=../ntupleWriterSvc.htm>manual</a>.
 
- * <br>An additional posibility for ROOT tuples is the service RootTupleSvc
+ * <br>(T. Burnett) An additional posibility for ROOT tuples is the service RootTupleSvc. It allows for multiple trees, and has only a setup phase:
+ one defines the tuple at initialization time, with pointers to the tuple values.
  * <hr>
  * @section notes release notes
  * release.notes
