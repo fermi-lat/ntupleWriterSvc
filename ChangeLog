@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr  8 14:14:02 PDT 2002
+ntupleWriterSvc/src
+
+Modified Files:
+	WriteTupleAlg.cxx ntupleWriterSvc.cxx 
+Log Message:
+upgrade doc and service loading
+    *
+------------------------------------------------------------
 User: heather  Mon Apr  8 14:13:20 PDT 2002
 ntupleWriterSvc/src/Dll
 
