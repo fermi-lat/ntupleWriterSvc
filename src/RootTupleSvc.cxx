@@ -24,7 +24,7 @@
 * @class RootTupleSvc
 * @brief Special service that directly writes ROOT tuples
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.9 2003/09/26 20:47:56 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.10 2003/09/26 23:13:57 burnett Exp $
 */
 class RootTupleSvc :  public Service, virtual public IIncidentListener,
     virtual public INTupleWriterSvc
@@ -95,7 +95,6 @@ private:
     int m_trials; /// total number of calls
     bool m_defaultStoreFlag;
     IntegerProperty m_autoSave; // passed to TTree::SetAutoSave.
-    array double test[100];
 
 };
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
