@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+TAG activity
+User: heather  Tue May 15 07:17:36 2001
+Tag name: v0r1
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
 User: heather  Tue May 15 07:17:02 PDT 2001
 ntupleWriterSvc/src/test jobOptions.txt
 
