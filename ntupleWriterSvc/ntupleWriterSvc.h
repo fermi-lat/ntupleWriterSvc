@@ -24,7 +24,7 @@ template <class TYPE> class SvcFactory;
  * ntupleWriterSvc clears the ntuple.  At the end of each event, the service
  * write to the ntuple in memory.
  * 
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.11 2003/07/23 16:38:01 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.12 2003/09/26 18:02:21 burnett Exp $
  */
 class ntupleWriterSvc :  public Service, virtual public IIncidentListener,
                         virtual public INTupleWriterSvc
@@ -67,6 +67,14 @@ public:
 
    /// check for NaN and infinity
    int isFinite(float val);
+
+       /** store row flag by tuple Name option, retrive currrent
+    @param tupleName Name of the tuple (TTree for RootTupleSvc implemetation)
+    @param flag new value
+    @return previous value
+    This service  does not implement, it is ignored (return false)
+    */
+   virtual bool storeRowFlag(const std::string& tupleName, bool flag){ return false;}
 
 protected: 
 
