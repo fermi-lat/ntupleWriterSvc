@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed May 16 07:42:41 PDT 2001
+ntupleWriterSvc/cmt cleanup.bat
+
+Removed Files:
+	cleanup.bat 
+Log Message:
+put in a mainpage
+    *
+------------------------------------------------------------
 User: burnett  Wed May 16 07:28:55 PDT 2001
 ntupleWriterSvc/src/test jobOptions.txt writeJunkAlg.cxx
 
