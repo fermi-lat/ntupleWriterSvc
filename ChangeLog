@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Thu Jun 28 16:23:42 PDT 2001
+ntupleWriterSvc/src WriteTupleAlg.cxx
+
+Added Files:
+	WriteTupleAlg.cxx 
+Log Message:
+New alg that periodically writes the ntuple. Not working yet.
+
+    *
+------------------------------------------------------------
 User: igable  Thu Jun 28 15:34:51 PDT 2001
 ntupleWriterSvc/src/test writeJunkAlg.cxx
 
