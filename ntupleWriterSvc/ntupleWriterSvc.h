@@ -10,14 +10,20 @@
 
 #include <map>
 
-//forward declarations
 template <class TYPE> class SvcFactory;
 
 /** 
  * @class ntupleWriterSvc
- * @brief A service that handles the ins and outs of writing to a ROOT ntuple
+ * @brief A service that handles the ins and outs of writing to a ntuple the 
+ * Gaudi framework.
+ *
+ * This service uses the Gaudi provided NTupleSvc and IncidentSvc.
+ * The IncidentSvc is used to inform ntupleWriterSvc when we have reached the
+ * beginning and the end of each event.  At the beginning of each event, the
+ * ntupleWriterSvc clears the ntuple.  At the end of each event, the service
+ * write to the ntuple in memory.
  * 
- * $Header$
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.9 2002/02/13 19:05:09 heather Exp $
  */
 class ntupleWriterSvc :  public Service, virtual public IIncidentListener,
                         virtual public INTupleWriterSvc
