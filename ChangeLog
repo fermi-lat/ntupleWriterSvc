@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jan 15 10:08:12 PST 2003
+ntupleWriterSvc/src
+
+Modified Files:
+	ntupleWriterSvc.cxx 
+Log Message:
+updates for Gaudi v11
+    *
+------------------------------------------------------------
 User: heather  Wed Jan 15 10:07:28 PST 2003
 ntupleWriterSvc/src/test
 
