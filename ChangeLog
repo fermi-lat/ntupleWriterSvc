@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: kuss  Mon Sep 20 07:31:47 PDT 2004
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Added Files:
+	checkSum.cxx checkSum.h 
+Log Message:
+I got bumped by the rename of ntuple variables.  I used the opportunity to
+extract checksum from RootTupleSvc into it's own class, to make maintenance
+easier.
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Aug  9 15:54:44 PDT 2004
 ntupleWriterSvc/src/test
 
