@@ -3,6 +3,7 @@
 #define _H_ntupleWriterSvc_
 
 #include "GaudiKernel/Service.h"
+
 #include "GaudiKernel/IIncidentListener.h"
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
 #include "GaudiKernel/INTupleSvc.h"
@@ -23,7 +24,7 @@ template <class TYPE> class SvcFactory;
  * ntupleWriterSvc clears the ntuple.  At the end of each event, the service
  * write to the ntuple in memory.
  * 
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.9 2002/02/13 19:05:09 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/ntupleWriterSvc.h,v 1.10 2002/04/08 21:12:51 heather Exp $
  */
 class ntupleWriterSvc :  public Service, virtual public IIncidentListener,
                         virtual public INTupleWriterSvc
@@ -48,6 +49,9 @@ public:
 
    /// add a new item to an ntuple
    virtual StatusCode addItem(const char *tupleName, const char *item, double val);
+
+     /// special version that adds a <EM>pointer</EM> to an item
+    virtual StatusCode addItem(const std::string & tupleName, const std::string& itemName, const double* val);
 
    /// force writing of the ntuple to disk
    virtual StatusCode saveNTuples();
@@ -95,6 +99,12 @@ private:
     std::map<std::string, std::string> m_tuples;
 
     bool m_storeFlag;
+
+    /// need the less for vc8
+    typedef std::map< NTuple::Item<float> , const double*, std::less<const void*> > 
+        NTupleItemMap;
+    /// special map to set values from pointers at end of event
+    NTupleItemMap  m_itemList;
 
     static unsigned int m_tupleCounter;
 };
