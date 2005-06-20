@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jun 20 14:43:41 PDT 2005
+ntupleWriterSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+update mainpage to include jobOptions section
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r6p1, operation: add
 Package: ntupleWriterSvc
