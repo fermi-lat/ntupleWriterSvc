@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Jul 22 09:47:37 PDT 2005
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+commit changes to reject bad tuple rows.
+    *
+------------------------------------------------------------
+User: burnett  Fri Jul 22 09:47:37 PDT 2005
 ntupleWriterSvc/doc
 
 Modified Files:
