@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Jul 23 06:14:50 PDT 2005
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+make a table of the bad values, during finaliization; provide override; document new flag
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r7, operation: add
 Package: ntupleWriterSvc
