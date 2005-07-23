@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.5 2004/08/09 22:54:44 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.6 2005/06/20 21:43:40 heather Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -57,8 +57,9 @@
  * Default 100000
  * In Bytes, denoting the size the ntuple must reach before triggering a true
  * write to disk.
- *
- * 
+ * @param RootTupleSvc.RejectIfBad
+ * Default true
+ * if set, tuple entries containing any non-finite values are not written
  * <hr>
  * @section notes release notes
  * release.notes
