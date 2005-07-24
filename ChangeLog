@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Jul 24 11:07:36 PDT 2005
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+fix output of bad values for case when they are written anyway
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 24 11:07:36 PDT 2005
 ntupleWriterSvc/doc
 
 Modified Files:
