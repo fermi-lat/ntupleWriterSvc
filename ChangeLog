@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jul 24 11:07:36 PDT 2005
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix output of bad values for case when they are written anyway
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r7p1, operation: add
 Package: ntupleWriterSvc
