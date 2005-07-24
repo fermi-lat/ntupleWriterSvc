@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.23 2005/07/22 16:47:37 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.24 2005/07/23 13:14:50 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -393,10 +393,10 @@ StatusCode RootTupleSvc::finalize ()
                     << std::setw(10)<<  std::right << it->second << std::endl;
             }
         }
+        log << endreq;
         if (m_rejectIfBad) { 
-            log << "\t\t\t==========> REJECTED since RejectIfBad flag set to do so!" ;
-            log << endreq;
-        }
+            log << MSG::WARNING << "==========> REJECTED since RejectIfBad flag set to do so!" << endreq;
+        } 
     }
 
     TDirectory *saveDir = gDirectory; 
