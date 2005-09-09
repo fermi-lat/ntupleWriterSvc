@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Fri Sep  9 07:16:11 PDT 2005
+ntupleWriterSvc/src
+
+Modified Files:
+	checkSum.cxx 
+Log Message:
+EvtEventId in ntuple is now a TLeafF (was TLeafD).
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r7p3, operation: add
 Package: ntupleWriterSvc
