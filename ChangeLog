@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Wed Sep 21 05:46:10 PDT 2005
+ntupleWriterSvc/src/test
+
+Modified Files:
+	testCheckSum.cxx 
+Log Message:
+small mod to analyze entire file
+
+    *
+------------------------------------------------------------
 User: kuss  Fri Sep  9 07:16:11 PDT 2005
 ntupleWriterSvc/src
 
