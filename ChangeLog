@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Thu Sep 29 23:50:47 PDT 2005
+ntupleWriterSvc/src
+
+Modified Files:
+	checkSum.cxx 
+Log Message:
+Hmm, I wanted McId instead of McSourceId
+
+    *
+------------------------------------------------------------
 User: kuss  Thu Sep 29 05:56:38 PDT 2005
 ntupleWriterSvc/src
 
