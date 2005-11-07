@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.24 2005/07/23 13:14:50 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.25 2005/07/24 18:07:36 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -106,6 +106,9 @@ public:
     virtual void storeRowFlag(bool flag) { m_storeAll = flag; }
     /// retrieve the flag that denotes whether or not to store a row
     virtual bool storeRowFlag() { return m_storeAll; }
+
+    virtual bool getItem(const std::string & tupleName, 
+        const std::string& itemName, void*& pval)const;
 
     /** store row flag by tuple Name option, retrive currrent
     @param tupleName Name of the tuple (TTree for RootTupleSvc implemetation)
@@ -419,3 +422,34 @@ bool RootTupleSvc::storeRowFlag(const std::string& tupleName, bool flag)
     m_storeTree[tupleName] = flag;
     return t;
 }
+
+
+
+bool RootTupleSvc::getItem(const std::string & tupleName, 
+                                   const std::string& itemName, void*& pval)const
+{
+    MsgStream log(msgSvc(),name());
+    StatusCode status = StatusCode::SUCCESS;
+    std::string treename=tupleName.empty()? m_treename.value() : tupleName;
+//    TDirectory *saveDir = gDirectory;
+    std::map<std::string, TTree*>::const_iterator treeit = m_tree.find(treename);
+    if( treeit==m_tree.end()){
+        log << MSG::ERROR << "Did not find tree" << treename << endreq;
+        throw std::invalid_argument("RootTupleSvc::getItem: did not find tuple or leaf");
+    }
+    TTree* t = treeit->second;
+    TLeaf* leaf = t->GetLeaf(itemName.c_str());
+    if( leaf==0){
+        log << MSG::ERROR << "Did not find leaf " <<itemName << endreq;
+        throw std::invalid_argument("RootTupleSvc::getItem: did not find tuple or leaf");
+    }
+    pval = leaf->GetValuePointer();
+    std::string type_name(leaf->GetTypeName());
+    if( type_name == "Float_t") return true;
+    if( type_name == "Double_t") return false;
+
+    throw std::invalid_argument("RootTupleSvc::getItem: type is not float or double");
+    return false;
+}
+
+
