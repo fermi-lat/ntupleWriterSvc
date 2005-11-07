@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Nov  6 20:13:11 PST 2005
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+Implement access to items (root leaf) in existing tuple
+    *
+------------------------------------------------------------
+User: burnett  Sun Nov  6 20:13:11 PST 2005
 ntupleWriterSvc/src
 
 Modified Files:
