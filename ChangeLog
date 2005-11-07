@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Sun Nov  6 20:13:11 PST 2005
-ntupleWriterSvc/src/test
-
-Modified Files:
-	writeJunkAlg.cxx 
-Log Message:
-Implement access to items (root leaf) in existing tuple
-    *
-------------------------------------------------------------
-User: burnett  Sun Nov  6 20:13:11 PST 2005
-ntupleWriterSvc/src
-
-Modified Files:
-	RootTupleSvc.cxx 
-Log Message:
-Implement access to items (root leaf) in existing tuple
-    *
-------------------------------------------------------------
-User: burnett  Sun Nov  6 20:13:10 PST 2005
-ntupleWriterSvc/ntupleWriterSvc
-
-Modified Files:
-	INTupleWriterSvc.h 
-Log Message:
-Implement access to items (root leaf) in existing tuple
-    *
-------------------------------------------------------------
 User: kuss  Thu Sep 29 23:50:47 PDT 2005
 ntupleWriterSvc/src
 
