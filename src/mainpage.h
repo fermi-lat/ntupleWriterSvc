@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.6 2005/06/20 21:43:40 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.7 2005/07/23 13:14:50 burnett Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -6,7 +6,7 @@
  *
  * @section intro Introduction
  
- * Defines the service RootTupleSvc, which implements INTupleWriterSvc. It allows for multiple trees, and has only a setup phase:
+ * Defines the service RootTupleSvc, which implements INTupleWriterSvc. It allows for multiple trees and multiple files, and has only a setup phase:
  one defines the tuple at initialization time, with pointers to the tuple values. 
 
  <br> Usage example: (see writeJunkAlg for a complete example)
@@ -21,6 +21,8 @@
     // during setup
     sc = service("RootTupleSvc", m_rootTupleSvc);
     m_rootTupleSvc->addItem("","test", &test);
+    or
+    m_rootTupleSvc->addItem("","test", &test, "myFile.root");
  ...
     // each event
     m_rootTupleSvc->storeRowFlag(true); 
