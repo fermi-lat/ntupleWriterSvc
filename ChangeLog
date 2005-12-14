@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Dec 14 13:26:14 PST 2005
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+add ability for mulitple output ROOT files
+    *
+------------------------------------------------------------
 User: heather  Wed Dec 14 13:25:59 PST 2005
 ntupleWriterSvc/ntupleWriterSvc
 
