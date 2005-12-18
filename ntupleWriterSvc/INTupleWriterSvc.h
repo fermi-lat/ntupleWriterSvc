@@ -43,14 +43,20 @@ public:
     */
     virtual bool storeRowFlag(const std::string& tupleName, bool flag)=0;
 
-    /** @brief Access the pointer to the value of an existing item.
+    /** @brief Set the pointer to the value of an existing item.
+    @param tupleName  Name of the tuple
+    @param itemName   Name of the item (or perhaps blank, see below)
+    @param pointer    point pointer that will be set  
 
     Expect to throw exception if not found.
     @return true if float type, false if double (client then must cast)
+
+    Note that the RootTupleSvc subclass implements a variation that it the name is empty,
+    it will set the pointer to the TTree.
     
     */
     virtual bool getItem(const std::string & tupleName, 
-        const std::string& itemName, void*&)const =0;
+        const std::string& itemName, void*& pointer)const =0;
 
 
     /// Retrieve interface ID

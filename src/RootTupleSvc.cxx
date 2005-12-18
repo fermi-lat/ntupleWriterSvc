@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.25 2005/07/24 18:07:36 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.26 2005/11/07 04:13:11 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -438,10 +438,15 @@ bool RootTupleSvc::getItem(const std::string & tupleName,
         throw std::invalid_argument("RootTupleSvc::getItem: did not find tuple or leaf");
     }
     TTree* t = treeit->second;
+
+    if( itemName.empty()){
+        // assume this is a request for the tree
+        pval = (void *)t;
+        return false;
+    }
     TLeaf* leaf = t->GetLeaf(itemName.c_str());
     if( leaf==0){
-        log << MSG::ERROR << "Did not find leaf " <<itemName << endreq;
-        throw std::invalid_argument("RootTupleSvc::getItem: did not find tuple or leaf");
+        throw std::invalid_argument(std::string("RootTupleSvc::getItem: did not find tuple or leaf")+ itemName);
     }
     pval = leaf->GetValuePointer();
     std::string type_name(leaf->GetTypeName());
