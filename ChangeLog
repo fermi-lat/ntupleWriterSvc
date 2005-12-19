@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Dec 18 16:06:24 PST 2005
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging after merging separate development on the DC2 branch.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r8gr1, operation: add
 Package: ntupleWriterSvc
