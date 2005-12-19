@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Dec 18 16:06:24 PST 2005
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+tagging after merging separate development on the DC2 branch.
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 18 16:06:24 PST 2005
 ntupleWriterSvc/doc
 
 Modified Files:
