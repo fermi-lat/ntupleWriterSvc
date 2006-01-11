@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.26 2005/11/07 04:13:11 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.26.2.1 2005/12/18 18:29:15 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -14,6 +14,7 @@
 #include "GaudiKernel/IIncidentSvc.h"
 #include "GaudiKernel/Property.h"
 #include "GaudiKernel/SmartDataPtr.h"
+#include "GaudiKernel/MsgStream.h"
 
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
 #include "checkSum.h"
@@ -117,6 +118,10 @@ public:
     If service does not implement, it is ignored (return false)
     */
     virtual bool storeRowFlag(const std::string& tupleName, bool flag);
+
+
+    //! Save the row in the output file
+    virtual void saveRow(const std::string& tupleName);
 
 private:
     /// Allow only SvcFactory to instantiate the service.
@@ -415,7 +420,6 @@ StatusCode RootTupleSvc::finalize ()
     return StatusCode::SUCCESS;
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 bool RootTupleSvc::storeRowFlag(const std::string& tupleName, bool flag)
 {
     bool t = m_storeTree[tupleName];
@@ -424,7 +428,7 @@ bool RootTupleSvc::storeRowFlag(const std::string& tupleName, bool flag)
 }
 
 
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 bool RootTupleSvc::getItem(const std::string & tupleName, 
                                    const std::string& itemName, void*& pval)const
 {
@@ -457,4 +461,17 @@ bool RootTupleSvc::getItem(const std::string & tupleName,
     return false;
 }
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+void RootTupleSvc::saveRow(const std::string& tupleName)
+{
+    std::map<std::string, TTree*>::iterator treeit=m_tree.find(tupleName);
+    if( treeit==m_tree.end()){
+        MsgStream(msgSvc(),name()) << MSG::ERROR << "Did not find tree " << tupleName << endreq;
+        throw std::invalid_argument("RootTupleSvc::saveRow: did not find tupleName");
+    }
 
+    TTree* t= treeit->second;
+    t->Fill();
+    m_storeTree[treeit->first]=false;
+
+}
