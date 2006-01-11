@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Wed Jan 11 10:53:24 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+      Tag: GRv7r3p1
+	RootTupleSvc.cxx 
+Log Message:
+add new function to allow saving a row
+    *
+------------------------------------------------------------
+User: burnett  Wed Jan 11 10:53:24 PST 2006
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
