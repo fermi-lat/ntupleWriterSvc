@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Jan 12 18:34:16 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+      Tag: GRv7r3p1
+	RootTupleSvc.cxx 
+Log Message:
+unix compile
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r8gr2, operation: add
 Package: ntupleWriterSvc
