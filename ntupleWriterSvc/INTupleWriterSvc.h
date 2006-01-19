@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare the Gaudi interface class INTupleWriterSvc
 
-    $Header$
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.8.2.3 2006/01/19 03:19:05 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -9,7 +9,7 @@
 #include "GaudiKernel/IInterface.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  4 ,0); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  5 ,0); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
