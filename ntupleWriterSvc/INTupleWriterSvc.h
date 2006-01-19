@@ -1,16 +1,15 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header$
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.10 2005/12/19 00:06:24 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
 
 #include "GaudiKernel/IInterface.h"
-#include "GaudiKernel/NTuple.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  4 ,0); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  5 ,0); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
@@ -67,8 +66,10 @@ public:
     
     */
     virtual bool getItem(const std::string & tupleName, 
-        const std::string& itemName, void*&)const =0;
+        const std::string& itemName, void*& pointer)const =0;
 
+    //! Save the row in the output file
+    virtual void saveRow(const std::string& tupleName)=0; 
 
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_INTupleWriterSvc; }
