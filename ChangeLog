@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Thu Jan 19 05:52:33 PST 2006
-ntupleWriterSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-merge to MAIN branch; tag
-    *
-------------------------------------------------------------
-User: burnett  Thu Jan 19 05:52:33 PST 2006
-ntupleWriterSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-merge to MAIN branch; tag
-    *
-------------------------------------------------------------
-User: burnett  Thu Jan 19 05:52:32 PST 2006
-ntupleWriterSvc
-
-Modified Files:
-	.cvsignore 
-Log Message:
-merge to MAIN branch; tag
-    *
-------------------------------------------------------------
 User: burnett  Thu Jan 19 05:41:36 PST 2006
 ntupleWriterSvc/src
 
