@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jan 19 05:52:34 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+merge to MAIN branch; tag
+    *
+------------------------------------------------------------
 User: burnett  Thu Jan 19 05:52:33 PST 2006
 ntupleWriterSvc/ntupleWriterSvc
 
