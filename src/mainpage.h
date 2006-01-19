@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.8 2005/12/14 21:26:25 heather Exp $
+// $Header$
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
