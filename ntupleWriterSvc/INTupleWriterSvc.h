@@ -7,10 +7,9 @@
 #define _H_INTupleWriterSvc_
 
 #include "GaudiKernel/IInterface.h"
-//#include "GaudiKernel/NTuple.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  3 ,3); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  4 ,0); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
@@ -27,13 +26,19 @@ public:
     virtual StatusCode finalize ()=0;
 
     /// add a pointer to a  double, or an array (depending on [n] following the name) of doubles
-    virtual StatusCode addItem(const std::string & tupleName, const std::string& itemName, const double* val)=0;
+    virtual StatusCode addItem(const std::string & tupleName, 
+             const std::string& itemName, const double* val,
+             const std::string& fileName=std::string(""))=0;
 
     /// add a pointer to a  float, or an array of floats
-    virtual StatusCode addItem(const std::string & tupleName, const std::string& itemName, const float* val)=0;
+    virtual StatusCode addItem(const std::string & tupleName, 
+             const std::string& itemName, const float* val,
+             const std::string& fileName=std::string(""))=0;
     
     /// add a pointer to an int (32 bits) or an array
-    virtual StatusCode addItem(const std::string & tupleName, const std::string& itemName, const int* val)=0;
+    virtual StatusCode addItem(const std::string & tupleName, 
+            const std::string& itemName, const int* val,
+            const std::string& fileName=std::string(""))=0;
  
    
     virtual void storeRowFlag(bool flag)=0;

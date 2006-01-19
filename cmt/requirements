@@ -1,7 +1,6 @@
 package ntupleWriterSvc
-version v3r8gr3
-
-#$Id: requirements,v 1.31.2.2 2006/01/11 18:53:24 burnett Exp $
+version v3r11
+#$Id$
 author H. Kelly <heather@heapop.gsfc.nasa.gov>
 branches src mgr doc
 
