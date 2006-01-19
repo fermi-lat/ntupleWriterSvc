@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jan 19 05:52:33 PST 2006
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+merge to MAIN branch; tag
+    *
+------------------------------------------------------------
+User: burnett  Thu Jan 19 05:52:33 PST 2006
 ntupleWriterSvc/cmt
 
 Modified Files:
