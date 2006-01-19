@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Jan 19 05:41:36 PST 2006
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+      Tag: GRv7r3p1
+	INTupleWriterSvc.h 
+Log Message:
+second attempt to merge with HEAD
+    *
+------------------------------------------------------------
 User: burnett  Thu Jan 19 05:41:35 PST 2006
 ntupleWriterSvc/doc
 
