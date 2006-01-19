@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan 18 19:19:05 PST 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+      Tag: GRv7r3p1
+	requirements 
+Log Message:
+mergiing and tagging
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r8gr3, operation: add
 Package: ntupleWriterSvc
