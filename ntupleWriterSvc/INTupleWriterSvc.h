@@ -1,12 +1,13 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.10 2005/12/19 00:06:24 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.11 2006/01/19 13:52:33 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
 
 #include "GaudiKernel/IInterface.h"
+#include <string>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  5 ,0); 
