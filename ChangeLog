@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jan 20 09:42:18 PST 2006
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+patch for string include
+    *
+------------------------------------------------------------
 User: heather  Fri Jan 20 09:42:06 PST 2006
 ntupleWriterSvc/doc
 
