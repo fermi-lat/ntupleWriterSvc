@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jan 20 09:41:59 PST 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for string include
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r12, operation: add
 Package: ntupleWriterSvc
