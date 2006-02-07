@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Feb  7 09:05:33 PST 2006
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+add uint possibility
+    *
+------------------------------------------------------------
 User: burnett  Tue Feb  7 09:05:32 PST 2006
 ntupleWriterSvc/src
 
