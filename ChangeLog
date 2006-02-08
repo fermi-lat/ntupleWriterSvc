@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb  8 10:45:37 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+change interface slightly, just a return value
+    *
+------------------------------------------------------------
 User: burnett  Wed Feb  8 10:45:36 PST 2006
 ntupleWriterSvc/ntupleWriterSvc
 
