@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb  8 10:45:36 PST 2006
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+change interface slightly, just a return value
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r13, operation: add
 Package: ntupleWriterSvc
