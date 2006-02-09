@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Thu Feb  9 11:53:55 PST 2006
-ntupleWriterSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-fix test program, patch tag
-    *
-------------------------------------------------------------
-User: burnett  Thu Feb  9 11:53:53 PST 2006
-ntupleWriterSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-fix test program, patch tag
-    *
-------------------------------------------------------------
 TAG
 Tag name: v3r13p1, operation: add
 Package: ntupleWriterSvc
