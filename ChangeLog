@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb  9 11:53:55 PST 2006
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix test program, patch tag
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb  9 11:53:53 PST 2006
 ntupleWriterSvc/cmt
 
