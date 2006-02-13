@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.26.2.2 2006/01/11 18:53:24 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.26.2.3 2006/01/13 02:34:16 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -68,7 +68,7 @@ public:
     virtual void handle(const Incident& inc);    
 
     /// Query interface - required of all Gaudi services
-    virtual StatusCode queryInterface( const IID& riid, void** ppvUnknown );
+    virtual StatusCode queryInterface( const InterfaceID& riid, void** ppvUnknown );
 
     /** @brief Adds a pointer to a double, or an array of doubles
     @param tupleName - name of the Root tree: if it does not exist, it will be created. If blank, use the default
@@ -354,7 +354,7 @@ StatusCode RootTupleSvc::checkForNAN( TTree* t, MsgStream& log)
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-StatusCode RootTupleSvc::queryInterface(const IID& riid, void** ppvInterface)  {
+StatusCode RootTupleSvc::queryInterface(const InterfaceID& riid, void** ppvInterface)  {
     if ( IID_INTupleWriterSvc.versionMatch(riid) )  {
         *ppvInterface = (INTupleWriterSvc*)this;
     }
