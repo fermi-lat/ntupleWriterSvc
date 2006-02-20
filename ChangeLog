@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Feb 19 16:41:50 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+fix for tree access
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r8cl0, operation: add
 Package: ntupleWriterSvc
