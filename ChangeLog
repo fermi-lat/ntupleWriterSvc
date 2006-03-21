@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 User: usher  Mon Mar 20 17:23:13 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+    *
+------------------------------------------------------------
+User: usher  Mon Mar 20 17:23:13 PST 2006
 ntupleWriterSvc
 
 Modified Files:
