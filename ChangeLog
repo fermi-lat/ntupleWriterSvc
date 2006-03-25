@@ -1,4 +1,30 @@
 ------------------------------------------------------------
+TAG
+Tag name: v3r14, operation: add
+Package: ntupleWriterSvc
+User: heather  Fri Mar 24 17:19:24 2006
+Files:
+  ntupleWriterSvc/.cvsignore  1.2
+  ntupleWriterSvc/ChangeLog  1.264
+  ntupleWriterSvc/cmt/.cvsignore  1.1.1.1
+  ntupleWriterSvc/cmt/NMake  1.1.1.1
+  ntupleWriterSvc/cmt/requirements  1.40
+  ntupleWriterSvc/cmt/Makefile  1.1.1.1
+  ntupleWriterSvc/doc/release.notes  1.38
+  ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h  1.14
+  ntupleWriterSvc/src/checkSum.h  1.2
+  ntupleWriterSvc/src/WriteTupleAlg.cxx  1.3
+  ntupleWriterSvc/src/mainpage.h  1.8
+  ntupleWriterSvc/src/RootTupleSvc.cxx  1.33
+  ntupleWriterSvc/src/checkSum.cxx  1.5
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx  1.6
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx  1.4
+  ntupleWriterSvc/src/test/writeJunkAlg.cxx  1.18
+  ntupleWriterSvc/src/test/jobOptions.txt  1.10
+  ntupleWriterSvc/src/test/testCheckSum.cxx  1.2
+
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 24 17:19:12 PST 2006
 ntupleWriterSvc/doc
 
