@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 30 13:11:11 PDT 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix that email address
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r14, operation: add
 Package: ntupleWriterSvc
