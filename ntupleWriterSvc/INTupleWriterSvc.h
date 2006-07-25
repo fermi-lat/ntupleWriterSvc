@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.13 2006/02/07 17:05:30 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.14 2006/02/08 18:45:34 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -47,11 +47,18 @@ public:
             const std::string& itemName, const unsigned int* val,
             const std::string& fileName=std::string(""))=0;
  
+    /// add a pointer to a zero-terminated character string. Note that the
+    /// data member must be the actual array containing the character data,
+    /// which must be recopied for each event
+    virtual StatusCode addItem(const std::string & tupleName, 
+        const std::string& itemName, const char * val,
+            const std::string& fileName=std::string(""))=0;
+
+#if 1 // deprecate! eliminate!
 
     virtual void storeRowFlag(bool flag)=0;
-
     virtual bool storeRowFlag()=0;
-
+#endif
     /** store row flag by tuple Name option, retrive currrent
     @param tupleName Name of the tuple (TTree for RootTupleSvc implemetation)
     @param flag new value
