@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Jul 24 19:06:06 PDT 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+new type: character array; tagging
+    *
+------------------------------------------------------------
 User: burnett  Mon Jul 24 19:03:15 PDT 2006
 ntupleWriterSvc/src/test
 
