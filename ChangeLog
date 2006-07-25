@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Jul 24 19:03:15 PDT 2006
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+add character array option
+    *
+------------------------------------------------------------
 User: heather  Tue May 30 13:11:11 PDT 2006
 ntupleWriterSvc/cmt
 
