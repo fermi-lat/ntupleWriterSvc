@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Jul 24 19:03:15 PDT 2006
+ntupleWriterSvc/src/test
+
+Modified Files:
+	writeJunkAlg.cxx 
+Log Message:
+add character array option
+    *
+------------------------------------------------------------
+User: burnett  Mon Jul 24 19:03:15 PDT 2006
 ntupleWriterSvc/src
 
 Modified Files:
