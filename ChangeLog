@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Jul 24 19:06:06 PDT 2006
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+new type: character array; tagging
+    *
+------------------------------------------------------------
+User: burnett  Mon Jul 24 19:06:06 PDT 2006
 ntupleWriterSvc/cmt
 
 Modified Files:
