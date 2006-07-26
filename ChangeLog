@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jul 26 08:17:08 PDT 2006
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+tweak documentation to remove suggestion that ROOT would interpret it as an addressable array of char: is it only a name.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r15, operation: add
 Package: ntupleWriterSvc
