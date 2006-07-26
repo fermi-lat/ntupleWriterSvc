@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Jul 26 08:17:08 PDT 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+tweak documentation to remove suggestion that ROOT would interpret it as an addressable array of char: is it only a name.
+    *
+------------------------------------------------------------
+User: burnett  Wed Jul 26 08:17:08 PDT 2006
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
