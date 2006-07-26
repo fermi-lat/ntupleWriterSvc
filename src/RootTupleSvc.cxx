@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.33 2006/03/21 01:23:13 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.34 2006/07/25 02:03:15 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -113,7 +113,7 @@ public:
 
     /** @brief Adds a pointer to a zero-terminated array of char 
     @param tupleName - name of the Root tree: if it does not exist, it will be created. If blank, use the default
-    @param itemName - name of the tuple column. append [n] to make a fixed array of length n
+    @param itemName - name of the tuple column.
     @param pval - pointer to the character array
     @param fileName - name of ROOT file: if it does not exist, it will be created
     */
