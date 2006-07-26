@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.14 2006/02/08 18:45:34 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.15 2006/07/25 02:03:15 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -47,11 +47,17 @@ public:
             const std::string& itemName, const unsigned int* val,
             const std::string& fileName=std::string(""))=0;
  
-    /// add a pointer to a zero-terminated character string. Note that the
-    /// data member must be the actual array containing the character data,
-    /// which must be recopied for each event
+        /** @brief Adds a pointer to a zero-terminated array of char 
+    @param tupleName - name of the Root tree: if it does not exist, it will be created. If blank, use the default
+    @param itemName - name of the tuple column.
+    @param pval - pointer to the character array
+     Note that the  data member must be the actual array containing the character data,
+     which must be recopied for each event, say with strncpy.
+    @param fileName - name of ROOT file: if it does not exist, it will be created
+    */
+
     virtual StatusCode addItem(const std::string & tupleName, 
-        const std::string& itemName, const char * val,
+        const std::string& itemName, const char * pval,
             const std::string& fileName=std::string(""))=0;
 
 #if 1 // deprecate! eliminate!
