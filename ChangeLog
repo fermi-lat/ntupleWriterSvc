@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sun Dec 24 17:32:37 PST 2006
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx mainpage.h 
+Added Files:
+	Count.cxx 
+Log Message:
+implement functionality to support jobinfo tree
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 24 17:32:37 PST 2006
 ntupleWriterSvc/src/Dll
 
 Modified Files:
