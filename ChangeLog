@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Dec 24 17:32:37 PST 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+implement functionality to support jobinfo tree
+    *
+------------------------------------------------------------
 User: burnett  Wed Jul 26 08:17:08 PDT 2006
 ntupleWriterSvc/src
 
