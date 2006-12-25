@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.34 2006/07/25 02:03:15 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.35 2006/07/26 15:17:08 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -30,6 +30,7 @@
 #include <map>
 #include <fstream>
 #include <iomanip>
+#include <list>
 
 namespace {
 #ifdef WIN32
@@ -173,6 +174,9 @@ private:
     StringProperty m_treename;
     StringProperty m_title;
 
+    StringProperty m_jobInfoTreeName;
+    StringProperty m_jobInfo;
+
     /// the ROOT stuff: a file and a a set of trees to put into it
     // replaced with m_fileCol, so we can handle multiple ROOT output files
     //TFile * m_tf;
@@ -221,7 +225,8 @@ RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("defaultStoreFlag", m_defaultStoreFlag=false);
     declareProperty("AutoSave", m_autoSave=100000); // ROOT default is 10000000
     declareProperty("RejectIfBad", m_rejectIfBad=true); 
-
+    declareProperty("JobInfoTreeName", m_jobInfoTreeName="jobinfo");
+    declareProperty("JobInfo", m_jobInfo=""); // string, if present, will write out single TTree entry
 
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -264,6 +269,7 @@ StatusCode RootTupleSvc::initialize ()
         return StatusCode::FAILURE;
     }
     m_fileCol[m_filename.value()] = tf;
+
 
     // set up the check sum ofstream
     m_checkSum = new checkSum(m_checksumfilename);
@@ -474,6 +480,25 @@ StatusCode RootTupleSvc::finalize ()
 {
     // open the message log
     MsgStream log( msgSvc(), name() );
+    
+    // -- set up job info TTree if requested to add values, or the tree exists already
+
+    TTree * jobinfotree(0);
+    std::list<float> values;
+    getItem(m_jobInfoTreeName, "", (void*&)jobinfotree);
+    if( jobinfotree!=0 || ! m_jobInfo.value().empty() ){
+        std::map<std::string, std::string > parmap;
+        facilities::Util::keyValueTokenize(m_jobInfo.value(), ",", parmap);
+        for(  std::map<std::string, std::string >::const_iterator mip = parmap.begin(); mip!=parmap.end(); ++mip){
+            std::string key (mip->first), value(mip->second);
+            // assume all numbers
+            values.push_back( facilities::Util::stringToDouble(value) );
+            float* fval = &values.back(); 
+            addItem(m_jobInfoTreeName, key, fval);
+        }
+        // process this row
+        saveRow(m_jobInfoTreeName); 
+    }
 
     for( std::map<std::string, TTree*>::iterator it = m_tree.begin(); it!=m_tree.end(); ++it){
         TTree* t = it->second; 
@@ -511,6 +536,9 @@ StatusCode RootTupleSvc::finalize ()
             log << MSG::WARNING << "==========> REJECTED since RejectIfBad flag set to do so!" << endreq;
         } 
     }
+
+ 
+
 
     for( std::map<std::string, TFile*>::iterator it = m_fileCol.begin(); it!=m_fileCol.end(); ++it){
         TFile* f = it->second; 

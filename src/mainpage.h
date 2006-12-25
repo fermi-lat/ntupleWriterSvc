@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.7 2005/07/23 13:14:50 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.8 2005/12/14 21:26:25 heather Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -37,6 +37,8 @@
  @param title	["Glast tuple"] Title for all TTree's
  @param defaultStoreFlag [false] Store the row at the end of an event loop cycle. If false, client must execute storeRowFlag(true) to save all trres in  the current event. Or, the client can execute storeRowFlag(treename, true) to save the specific tree.	false
  @param AutoSave [100000]	 Number of bytes to save at a time (ROOT default is 10000000)
+ @param JobInfoTreeName ["jobinfo"]
+ @param JobInfo  string of the form "a=99, b=100" of names, values to add to the jobinfo tree
 
  <hr>
  * @section jobOptions jobOptions
