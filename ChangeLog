@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Dec 25 07:19:44 PST 2006
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+patch
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 25 07:19:44 PST 2006
 ntupleWriterSvc/cmt
 
 Modified Files:
