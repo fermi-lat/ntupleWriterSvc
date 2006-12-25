@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Dec 25 07:19:44 PST 2006
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r16, operation: add
 Package: ntupleWriterSvc
