@@ -2,6 +2,14 @@
 TAG
 Tag name: v3r16, operation: add
 Package: ntupleWriterSvc
+User: burnett  Sun Dec 24 17:48:12 2006
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v3r16, operation: add
+Package: ntupleWriterSvc
 User: burnett  Sun Dec 24 17:33:02 2006
 Files:
   ntupleWriterSvc/.cvsignore  1.2
