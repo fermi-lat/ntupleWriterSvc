@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Dec 25 16:17:40 PST 2006
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+deal with lifetime of Count objects
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 25 16:17:40 PST 2006
 ntupleWriterSvc/cmt
 
 Modified Files:
