@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Mar 31 10:07:00 PDT 2007
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+patching for rhel4
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r16p2, operation: add
 Package: ntupleWriterSvc
