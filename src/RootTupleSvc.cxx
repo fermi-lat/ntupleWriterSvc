@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.38 2006/12/26 00:17:40 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.39 2007/03/31 17:07:00 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -33,12 +33,13 @@
 #include <list>
 #include <string>
 
-namespace {
 #ifdef WIN32
 #include <float.h> // used to check for NaN
 #else
 #include <cmath>
 #endif
+
+namespace {
 
     bool isFinite(double val) {
         using namespace std; // should allow either std::isfinite or ::isfinite
