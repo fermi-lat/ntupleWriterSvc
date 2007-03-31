@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.37 2006/12/25 15:19:44 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.38 2006/12/26 00:17:40 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -31,6 +31,7 @@
 #include <fstream>
 #include <iomanip>
 #include <list>
+#include <string>
 
 namespace {
 #ifdef WIN32
