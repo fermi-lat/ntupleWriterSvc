@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Sun Jul 22 10:37:47 PDT 2007
-ntupleWriterSvc/src
-
-Modified Files:
-	RootTupleSvc.cxx 
-Log Message:
-tagging after protecting the TFile
-    *
-------------------------------------------------------------
-User: burnett  Sun Jul 22 10:37:47 PDT 2007
-ntupleWriterSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-tagging after protecting the TFile
-    *
-------------------------------------------------------------
-User: burnett  Sun Jul 22 10:37:47 PDT 2007
-ntupleWriterSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-tagging after protecting the TFile
-    *
-------------------------------------------------------------
 TAG
 Tag name: v3r16p3, operation: add
 Package: ntupleWriterSvc
