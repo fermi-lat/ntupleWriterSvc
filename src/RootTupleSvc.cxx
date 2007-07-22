@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.39 2007/03/31 17:07:00 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.40 2007/03/31 21:59:33 jrb Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -262,7 +262,8 @@ StatusCode RootTupleSvc::initialize ()
     m_tree.clear();
     m_badMap.clear();
 
-    // -- set up the tuple ---
+    // -- create primary root file---
+    TDirectory* curdir = gDirectory; // will prevent unauthorized use
     TFile *tf   = new TFile( m_filename.value().c_str(), "RECREATE");
     if (!tf->IsOpen()) {
         log << MSG::ERROR 
@@ -271,6 +272,7 @@ StatusCode RootTupleSvc::initialize ()
         return StatusCode::FAILURE;
     }
     m_fileCol[m_filename.value()] = tf;
+    curdir->cd(); // restore previous directory
 
 
     // set up the check sum ofstream
