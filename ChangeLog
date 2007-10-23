@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: kuss  Tue Oct 23 02:57:50 PDT 2007
+ntupleWriterSvc/cmt
+
+Modified Files:
+	.cvsignore 
+Removed Files:
+	Makefile NMake 
+Log Message:
+the janitor
+
+    *
+------------------------------------------------------------
 User: kuss  Tue Oct 23 02:57:49 PDT 2007
 ntupleWriterSvc
 
