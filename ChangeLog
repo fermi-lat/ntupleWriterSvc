@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: kuss  Tue Oct 23 02:53:41 PDT 2007
+ntupleWriterSvc/src/test
+
+Removed Files:
+	testCheckSum.cxx 
+Log Message:
+remove the in-code checksum method
+
+    *
+------------------------------------------------------------
+User: kuss  Tue Oct 23 02:53:41 PDT 2007
 ntupleWriterSvc/src
 
 Modified Files:
