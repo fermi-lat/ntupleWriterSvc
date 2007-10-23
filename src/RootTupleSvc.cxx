@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.40 2007/03/31 21:59:33 jrb Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.41 2007/07/22 17:37:47 burnett Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -17,7 +17,6 @@
 #include "GaudiKernel/MsgStream.h"
 
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
-#include "checkSum.h"
 #include "facilities/Util.h"
 
 // root includes
@@ -172,7 +171,6 @@ private:
 
     // Associated with the name of the first output ROOT file
     StringProperty m_filename;
-    StringProperty m_checksumfilename;
     StringProperty m_treename;
     StringProperty m_title;
 
@@ -184,9 +182,6 @@ private:
     //TFile * m_tf;
 
     std::map<std::string, TFile*> m_fileCol;
-
-    /// the checksum object
-    checkSum* m_checkSum;
 
     std::map<std::string, TTree *> m_tree;
 
@@ -221,7 +216,6 @@ RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
 {
     // declare the properties and set defaults
     declareProperty("filename",  m_filename="RootTupleSvc.root");
-    declareProperty("checksumfilename", m_checksumfilename=""); // default empty
     declareProperty("treename", m_treename="1");
     declareProperty("title", m_title="Glast tuple");
     declareProperty("defaultStoreFlag", m_defaultStoreFlag=false);
@@ -273,16 +267,6 @@ StatusCode RootTupleSvc::initialize ()
     }
     m_fileCol[m_filename.value()] = tf;
     curdir->cd(); // restore previous directory
-
-
-    // set up the check sum ofstream
-    m_checkSum = new checkSum(m_checksumfilename);
-    if ( m_checkSum->bad() ) {
-        log << MSG::ERROR
-            << "cannot open checksum file " << m_checksumfilename << endreq;
-        delete m_checkSum;
-        return StatusCode::FAILURE;
-    }
 
     return status;
 }
@@ -429,13 +413,6 @@ StatusCode RootTupleSvc::endEvent()
                 t->Fill();
             }
             m_storeTree[it->first]=false;
-            // doing the checksum here
-            std::string treeName = t->GetName();
-            if ( m_checkSum->is_open() && treeName == "MeritTuple" ) {
-                log << MSG::VERBOSE << "calculating checksum for "
-                    << treeName << endreq;
-                m_checkSum->write(t);
-            }
         }
     }
         
@@ -565,10 +542,6 @@ StatusCode RootTupleSvc::finalize ()
             f=0;
         }
     }
-
-    // deleting the checksum object
-    if ( m_checkSum )
-        delete m_checkSum;
 
     return StatusCode::SUCCESS;
 }
