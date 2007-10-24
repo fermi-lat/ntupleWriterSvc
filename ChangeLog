@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Wed Oct 24 06:37:08 PDT 2007
+ntupleWriterSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+exterminate checksum also in mainpage
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r17p1, operation: add
 Package: ntupleWriterSvc
