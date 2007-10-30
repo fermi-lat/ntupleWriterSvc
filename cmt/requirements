@@ -1,6 +1,6 @@
 package ntupleWriterSvc
-version v3r17
-#$Id: requirements,v 1.47 2007/07/22 17:37:47 burnett Exp $
+version v3r18
+#$Id: requirements,v 1.48 2007/10/23 09:53:41 kuss Exp $
 author H. Kelly <heather@slac.stanford.edu>
 branches src doc
 
@@ -19,6 +19,8 @@ private
 
 apply_pattern package_Cshlibflags
 private
+
+use gr_app v*
 
 apply_pattern package_headers
 
