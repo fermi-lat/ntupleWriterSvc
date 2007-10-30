@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 29 20:23:48 PDT 2007
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use gr_app
+    *
+------------------------------------------------------------
 User: kuss  Wed Oct 24 06:37:08 PDT 2007
 ntupleWriterSvc/src
 
