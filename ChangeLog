@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Dec 14 12:14:14 PST 2007
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+allow setting of basket size
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r18, operation: add
 Package: ntupleWriterSvc
