@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Dec 14 12:14:14 PST 2007
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+allow setting of basket size
+    *
+------------------------------------------------------------
+User: heather  Fri Dec 14 12:14:14 PST 2007
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
