@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.15 2006/07/25 02:03:15 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.16 2006/07/26 15:17:08 burnett Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -90,6 +90,13 @@ public:
 
     //! Save the row in the output file
     virtual void saveRow(const std::string& tupleName)=0; 
+
+
+    //! Allow clients to set basket size on a per branch basis, or for
+    /// all branches by setting branchName="*" or branchName="xxx*"
+   /// see TTree::SetBasketSize
+    virtual void setBufferSize(const std::string& tupleName, int bufferSize, 
+                         const std::string& branchName=std::string("*")) = 0;
 
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_INTupleWriterSvc; }
