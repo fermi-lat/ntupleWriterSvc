@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Jan 18 12:05:12 PST 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx mainpage.h 
+Log Message:
+handle exception if issued from stringToDouble
+    *
+------------------------------------------------------------
+User: heather  Fri Jan 18 12:05:12 PST 2008
 ntupleWriterSvc/doc
 
 Modified Files:
