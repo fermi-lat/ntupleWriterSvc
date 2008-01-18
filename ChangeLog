@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Jan 18 12:05:12 PST 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+handle exception if issued from stringToDouble
+    *
+------------------------------------------------------------
+User: heather  Fri Jan 18 12:05:12 PST 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
