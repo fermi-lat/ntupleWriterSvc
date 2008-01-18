@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.42 2007/10/23 09:53:41 kuss Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.43 2007/12/14 20:14:14 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -484,11 +484,17 @@ StatusCode RootTupleSvc::finalize ()
         std::map<std::string, std::string > parmap;
         facilities::Util::keyValueTokenize(m_jobInfo.value(), ",", parmap);
         for(  std::map<std::string, std::string >::const_iterator mip = parmap.begin(); mip!=parmap.end(); ++mip){
+            try {
             std::string key (mip->first), value(mip->second);
             // assume all numbers
             values.push_back( facilities::Util::stringToDouble(value) );
             float* fval = &values.back(); 
             addItem(m_jobInfoTreeName, key, fval);
+            } catch(...) {
+               log << MSG::WARNING << "RootTupleSvc exception caught "
+                   << "processing jobinfo " << m_jobInfo.value()  
+                   << "Check string is in form: a=1,b=2,c=3" <<endreq; 
+            }
         }
         // process this row
         saveRow(m_jobInfoTreeName); 
