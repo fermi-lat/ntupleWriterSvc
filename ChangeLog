@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jan 18 12:05:12 PST 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+handle exception if issued from stringToDouble
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r19, operation: add
 Package: ntupleWriterSvc
