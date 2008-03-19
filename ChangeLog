@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Wed Mar 19 14:34:21 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Modify addAnyItem() so that it updates the pointer if called with an existing branch name
+This is in preparation for reprocessing, should be generally useful
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r19p1, operation: add
 Package: ntupleWriterSvc
