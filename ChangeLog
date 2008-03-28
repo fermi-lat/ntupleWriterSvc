@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Mar 28 12:32:33 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Kludge in a mechanism to read an input ntuple which is cloned for output (to allow reprocessing).
+    *
+------------------------------------------------------------
 User: lsrea  Wed Mar 19 14:34:21 PDT 2008
 ntupleWriterSvc/src
 
