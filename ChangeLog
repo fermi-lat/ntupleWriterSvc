@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Mon Mar 31 09:21:50 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Preparing to tag v3r20p0
+    *
+------------------------------------------------------------
+User: usher  Mon Mar 31 09:21:50 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
