@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Tue Apr  1 15:25:03 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix to handle vectors like PtPos[3]
+
+    *
+------------------------------------------------------------
+User: lsrea  Tue Apr  1 15:25:03 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
