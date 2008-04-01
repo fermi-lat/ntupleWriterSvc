@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue Apr  1 15:25:03 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix to handle vectors like PtPos[3]
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-20-01, operation: add
 Package: ntupleWriterSvc
