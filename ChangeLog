@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Apr  3 12:21:17 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+provide TChain option for input tuples
+    *
+------------------------------------------------------------
+User: heather  Thu Apr  3 12:21:17 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
