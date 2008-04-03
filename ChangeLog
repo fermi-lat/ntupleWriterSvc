@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Apr  3 12:21:17 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+provide TChain option for input tuples
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-20-02, operation: add
 Package: ntupleWriterSvc
