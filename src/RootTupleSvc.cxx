@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.48 2008/04/01 22:25:03 lsrea Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.49 2008/04/03 19:21:17 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -211,7 +211,7 @@ private:
     /// load a new tree from the input TChain
     /// vector of pairs, where first is the key into m_tree, the name of
     /// output TTree, and the second is a pair of leaf name, and address
-    std::vector< std::pair< std::string, std::pair<std::string, void*> > > m_branchCol;
+    std::vector< std::pair< std::string, std::pair<std::string, const void*> > > m_branchCol;
 
     /// the flags, one per tree, for storing at the end of an event
     // assumes each TTree has a unique name
@@ -574,7 +574,7 @@ void RootTupleSvc::beginEvent()
         if (inIter->second->GetTreeNumber() != m_curTreeNumber[treename]) {
             m_curTreeNumber[treename] = inIter->second->GetTreeNumber();
             // reset branch pointers
-            std::vector< std::pair< std::string, std::pair<std::string, void*> > >::const_iterator it;
+            std::vector< std::pair< std::string, std::pair<std::string, const void*> > >::const_iterator it;
             for (it = m_branchCol.begin(); it != m_branchCol.end(); it++) {
                 std::string treeName = it->first;
                 TBranch *br = m_tree[treeName]->GetBranch(it->second.first.c_str());
