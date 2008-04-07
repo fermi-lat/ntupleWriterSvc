@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sun Apr  6 20:54:28 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch init in getTree for input tuples
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-21-00, operation: add
 Package: ntupleWriterSvc
