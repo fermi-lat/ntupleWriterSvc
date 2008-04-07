@@ -2,6 +2,14 @@
 TAG
 Tag name: ntupleWriterSvc-03-21-01, operation: add
 Package: ntupleWriterSvc
+User: glastrm  Mon Apr  7 08:06:23 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ntupleWriterSvc-03-21-01, operation: add
+Package: ntupleWriterSvc
 User: glastrm  Sun Apr  6 21:00:21 2008
 Files:
   ntupleWriterSvc/.cvsignore  1.3
