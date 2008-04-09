@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Apr  9 13:07:07 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix typo
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-21-02, operation: add
 Package: ntupleWriterSvc
