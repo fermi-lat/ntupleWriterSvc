@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Apr  9 13:07:07 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix typo
+    *
+------------------------------------------------------------
+User: heather  Wed Apr  9 13:07:07 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
