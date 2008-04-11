@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Apr 11 11:27:53 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+try this out
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-21-03, operation: add
 Package: ntupleWriterSvc
