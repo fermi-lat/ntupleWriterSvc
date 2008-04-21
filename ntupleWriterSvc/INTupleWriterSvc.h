@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.16 2006/07/26 15:17:08 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.17 2007/12/14 20:14:14 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -86,7 +86,7 @@ public:
     
     */
     virtual std::string getItem(const std::string & tupleName, 
-        const std::string& itemName, void*& pointer)const =0;
+        const std::string& itemName, void*& pointer) =0;
 
     //! Save the row in the output file
     virtual void saveRow(const std::string& tupleName)=0; 
