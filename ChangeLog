@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Apr 23 09:20:44 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+handle array branch names properly
+    *
+------------------------------------------------------------
+User: heather  Wed Apr 23 09:20:44 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
