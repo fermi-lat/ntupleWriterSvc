@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Apr 23 09:20:45 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+handle array branch names properly
+    *
+------------------------------------------------------------
 User: heather  Wed Apr 23 09:20:44 PDT 2008
 ntupleWriterSvc/doc
 
