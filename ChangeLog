@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Apr 23 09:20:44 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+handle array branch names properly
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-21-06, operation: add
 Package: ntupleWriterSvc
