@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Apr 22 21:35:27 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+set up branch ptrs for all branches
+    *
+------------------------------------------------------------
+User: heather  Tue Apr 22 21:35:27 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
