@@ -1,5 +1,28 @@
 ------------------------------------------------------------
 TAG
+Tag name: ntupleWriterSvc-03-21-08, operation: add
+Package: ntupleWriterSvc
+User: glastrm  Thu Apr 24 13:30:16 2008
+Files:
+  ntupleWriterSvc/.cvsignore  1.3
+  ntupleWriterSvc/ChangeLog  1.379
+  ntupleWriterSvc/cmt/.cvsignore  1.2
+  ntupleWriterSvc/cmt/requirements  1.63
+  ntupleWriterSvc/doc/release.notes  1.59
+  ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h  1.18
+  ntupleWriterSvc/src/WriteTupleAlg.cxx  1.3
+  ntupleWriterSvc/src/mainpage.h  1.11
+  ntupleWriterSvc/src/Count.cxx  1.2
+  ntupleWriterSvc/src/RootTupleSvc.cxx  1.57
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx  1.7
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx  1.4
+  ntupleWriterSvc/src/test/writeJunkAlg.cxx  1.19
+  ntupleWriterSvc/src/test/jobOptions.txt  1.11
+  ntupleWriterSvc/src/test/scanTuple.C  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v3r21p8, operation: add
 Package: ntupleWriterSvc
 User: heather  Thu Apr 24 13:29:07 2008
