@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Apr 24 13:28:48 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+oh let this be the final fix
+    *
+------------------------------------------------------------
+User: heather  Thu Apr 24 13:28:48 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
