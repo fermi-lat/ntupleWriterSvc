@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sun May  4 20:13:04 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+revert back to default buffer size
+    *
+------------------------------------------------------------
+User: heather  Sun May  4 20:13:04 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
