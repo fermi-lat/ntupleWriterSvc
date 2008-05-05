@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sun May  4 20:13:03 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+revert back to default buffer size
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-21-08, operation: add
 Package: ntupleWriterSvc
