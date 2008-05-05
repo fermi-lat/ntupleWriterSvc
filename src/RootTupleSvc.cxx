@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.56 2008/04/23 16:20:44 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.57 2008/04/24 20:28:48 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -265,7 +265,7 @@ RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("RejectIfBad", m_rejectIfBad=true); 
     declareProperty("JobInfoTreeName", m_jobInfoTreeName="jobinfo");
     declareProperty("JobInfo", m_jobInfo=""); // string, if present, will write out single TTree entry
-    declareProperty("BufferSize",m_bufferSize=1000000);
+    declareProperty("BufferSize",m_bufferSize=32000);
 
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
