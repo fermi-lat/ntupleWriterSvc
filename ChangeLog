@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon May 19 20:30:03 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+terminate job if GetEntry fails
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-22-00, operation: add
 Package: ntupleWriterSvc
