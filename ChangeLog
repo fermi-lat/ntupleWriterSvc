@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon May 19 20:30:03 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+terminate job if GetEntry fails
+    *
+------------------------------------------------------------
+User: heather  Mon May 19 20:30:03 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
