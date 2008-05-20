@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.57 2008/04/24 20:28:48 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.58 2008/05/05 03:13:04 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -603,8 +603,9 @@ void RootTupleSvc::beginEvent()
         int numBytes = inIter->second->GetEntry(m_nextEvent++);
         if (numBytes <= 0){
             MsgStream log(msgSvc(),name());
-            log << MSG::WARNING << "Failed to load event " << m_nextEvent-1
-                << " from the input chain" << endreq;
+            log << MSG::ERROR << "Failed to load event " << m_nextEvent-1
+                << " from the input chain, terminating job" << endreq;
+            exit(1);
         }
 
     }
