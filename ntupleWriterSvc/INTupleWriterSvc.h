@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.17 2007/12/14 20:14:14 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.18 2008/04/21 20:31:02 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -10,7 +10,7 @@
 #include <string>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  6 ,1); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  7 ,1); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
@@ -25,6 +25,8 @@ public:
     
     /// cleanup after event processing - required for all Gaudi services
     virtual StatusCode finalize ()=0;
+
+// LSR 14-Jul-08 code for ntuple types:
 
     /// add a pointer to a  double, or an array (depending on [n] following the name) of doubles
     virtual StatusCode addItem(const std::string & tupleName, 
@@ -45,6 +47,11 @@ public:
     /// add a pointer to a uint (32 bits) or an array
     virtual StatusCode addItem(const std::string & tupleName, 
             const std::string& itemName, const unsigned int* val,
+            const std::string& fileName=std::string(""))=0;
+ 
+    /// add a pointer to a uint (64 bits) or an array
+    virtual StatusCode addItem(const std::string & tupleName, 
+            const std::string& itemName, const unsigned long long* val,
             const std::string& fileName=std::string(""))=0;
  
         /** @brief Adds a pointer to a zero-terminated array of char 
