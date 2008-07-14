@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Mon Jul 14 16:37:23 PDT 2008
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+mods for unsigned long long (EvtEventId)
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon Jul 14 16:37:23 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
