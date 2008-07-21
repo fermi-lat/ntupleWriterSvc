@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Mon Jul 21 14:42:46 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v3r23p2
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r23p1, operation: add
 Package: ntupleWriterSvc
