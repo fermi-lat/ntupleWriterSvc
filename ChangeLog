@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:48 PDT 2008
+GlastRelease-scons/ntupleWriterSvc
+
+Added Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-23-02, operation: add
 Package: ntupleWriterSvc
