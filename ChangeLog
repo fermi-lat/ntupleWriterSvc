@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Sun Sep 14 08:16:36 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Fixed a little bug in the handling of ULong64_t and Int_t types... it doesn't look
+like it actually did any harm, but I don't know why.
+
+    *
+------------------------------------------------------------
+User: lsrea  Sun Sep 14 08:16:36 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
