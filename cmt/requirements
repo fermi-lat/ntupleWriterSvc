@@ -1,6 +1,6 @@
 package ntupleWriterSvc
-version v3r23p2
-#$Id: requirements,v 1.67 2008/07/21 21:39:50 lsrea Exp $
+version v3r23p3
+#$Id: requirements,v 1.68 2008/07/21 21:42:46 lsrea Exp $
 author H. Kelly <heather@slac.stanford.edu>
 branches src doc
 
