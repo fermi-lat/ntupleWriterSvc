@@ -2,6 +2,26 @@
 TAG
 Tag name: v3r23p3, operation: add
 Package: ntupleWriterSvc
+User: lsrea  Sun Sep 14 08:24:18 2008
+Files:
+  ntupleWriterSvc/cmt/requirements  1.69
+  ntupleWriterSvc/doc/release.notes  1.65
+  ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h  1.19
+  ntupleWriterSvc/src/WriteTupleAlg.cxx  1.3
+  ntupleWriterSvc/src/mainpage.h  1.11
+  ntupleWriterSvc/src/Count.cxx  1.2
+  ntupleWriterSvc/src/RootTupleSvc.cxx  1.61
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx  1.7
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx  1.4
+  ntupleWriterSvc/src/test/writeJunkAlg.cxx  1.19
+  ntupleWriterSvc/src/test/jobOptions.txt  1.11
+  ntupleWriterSvc/src/test/scanTuple.C  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v3r23p3, operation: add
+Package: ntupleWriterSvc
 User: lsrea  Sun Sep 14 08:22:56 2008
 Files:
   ntupleWriterSvc/cmt/requirements  1.69
