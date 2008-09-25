@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.10 2007/10/24 13:37:08 kuss Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.11 2008/01/18 20:05:12 heather Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -52,6 +52,9 @@
  * @param RootTupleSvc.RejectIfBad
  * Default true
  * if set, tuple entries containing any non-finite values are not written
+ * @param RootTupleSvc.StartingIndex
+ * Default 0
+ * Used for input ROOT tuples to denote starting index to read
  * @param RootTupleSvc.JobInfoTreeName 
  * Default ["jobinfo"]
  * Name of the tree to contain the jobinfo data
