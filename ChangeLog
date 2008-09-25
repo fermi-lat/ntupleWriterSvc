@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Sep 24 20:35:42 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx mainpage.h 
+Log Message:
+patch to add StartingIndex JO parameter
+    *
+------------------------------------------------------------
+User: heather  Wed Sep 24 20:35:42 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
