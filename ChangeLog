@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Sep 24 20:35:42 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch to add StartingIndex JO parameter
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-23-04, operation: add
 Package: ntupleWriterSvc
