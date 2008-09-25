@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Sep 24 20:35:42 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+patch to add StartingIndex JO parameter
+    *
+------------------------------------------------------------
+User: heather  Wed Sep 24 20:35:42 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
