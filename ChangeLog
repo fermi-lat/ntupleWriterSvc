@@ -1,5 +1,30 @@
 ------------------------------------------------------------
 TAG
+Tag name: ntupleWriterSvc-03-24-00, operation: add
+Package: ntupleWriterSvc
+User: glastrm  Wed Sep 24 21:30:27 2008
+Files:
+  ntupleWriterSvc/.cvsignore  1.3
+  ntupleWriterSvc/ChangeLog  1.423
+  ntupleWriterSvc/SConscript  1.3
+  ntupleWriterSvc/ntupleWriterSvcLib.py  1.1
+  ntupleWriterSvc/cmt/.cvsignore  1.2
+  ntupleWriterSvc/cmt/requirements  1.71
+  ntupleWriterSvc/doc/release.notes  1.67
+  ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h  1.19
+  ntupleWriterSvc/src/WriteTupleAlg.cxx  1.3
+  ntupleWriterSvc/src/mainpage.h  1.12
+  ntupleWriterSvc/src/Count.cxx  1.2
+  ntupleWriterSvc/src/RootTupleSvc.cxx  1.62
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx  1.7
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx  1.4
+  ntupleWriterSvc/src/test/writeJunkAlg.cxx  1.19
+  ntupleWriterSvc/src/test/jobOptions.txt  1.11
+  ntupleWriterSvc/src/test/scanTuple.C  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v3r24, operation: mov
 Package: ntupleWriterSvc
 User: glastrm  Wed Sep 24 21:30:17 2008
