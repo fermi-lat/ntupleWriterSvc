@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 29 10:30:48 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch init of startingIndex
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-24-00, operation: add
 Package: ntupleWriterSvc
