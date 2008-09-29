@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Sep 29 10:30:48 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+patch init of startingIndex
+    *
+------------------------------------------------------------
+User: heather  Mon Sep 29 10:30:48 PDT 2008
 ntupleWriterSvc/cmt
 
 Modified Files:
