@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Sep 30 19:48:49 PDT 2008
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+add new getTreePtr
+    *
+------------------------------------------------------------
+User: heather  Tue Sep 30 19:48:49 PDT 2008
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
