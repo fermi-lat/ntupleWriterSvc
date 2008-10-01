@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.18 2008/04/21 20:31:02 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.19 2008/07/14 23:37:23 lsrea Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -10,7 +10,7 @@
 #include <string>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  7 ,1); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  7 ,2); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
@@ -94,6 +94,9 @@ public:
     */
     virtual std::string getItem(const std::string & tupleName, 
         const std::string& itemName, void*& pointer) =0;
+
+    //! Provide access to TTree pointer given tuple name
+    virtual bool getTreePtr(const std::string& tupleName, void*& pointer) = 0;
 
     //! Save the row in the output file
     virtual void saveRow(const std::string& tupleName)=0; 
