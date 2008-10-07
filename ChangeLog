@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Oct  7 10:58:26 PDT 2008
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+add getInputTreePtr and getOutputTreePtr
+    *
+------------------------------------------------------------
+User: heather  Tue Oct  7 10:58:26 PDT 2008
 ntupleWriterSvc/doc
 
 Modified Files:
