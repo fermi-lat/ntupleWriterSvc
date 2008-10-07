@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.4 2008/09/29 18:30:14 glastrm Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.5 2008/10/01 03:30:11 glastrm Exp $ 
 # Authors: H. Kelly <heather@slac.stanford.edu>
-# Version: ntupleWriterSvc-03-25-00
+# Version: ntupleWriterSvc-04-00-00
 import os
 Import('baseEnv')
 Import('listFiles')
