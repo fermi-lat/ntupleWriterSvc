@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Oct  7 10:58:26 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add getInputTreePtr and getOutputTreePtr
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-25-00, operation: add
 Package: ntupleWriterSvc
