@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v4r0, operation: mov
+Package: ntupleWriterSvc
+User: glastrm  Tue Oct  7 11:30:16 2008
+Files:
+  ntupleWriterSvc/SConscript  1.6
+
+    *
+------------------------------------------------------------
 User: glastrm  Tue Oct  7 11:30:10 PDT 2008
 ntupleWriterSvc
 
