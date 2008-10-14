@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.21 2008/10/07 17:58:26 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.22 2008/10/07 18:00:28 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -96,11 +96,11 @@ public:
         const std::string& itemName, void*& pointer) =0;
 
     //! Provide access to input TTree pointer given tuple name
-    virtual bool getInputTreePtr(void*& treePtr, 
+    virtual long long getInputTreePtr(void*& treePtr, 
                                const std::string& tupleName="MeritTuple") = 0;
 
     //! Provide access to output TTree pointer given tuple name
-    virtual bool getOutputTreePtr(void*& treePtr, 
+    virtual long long getOutputTreePtr(void*& treePtr, 
                               const std::string& tupleName="MeritTuple") = 0;
 
     //! Save the row in the output file
