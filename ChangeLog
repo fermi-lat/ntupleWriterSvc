@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 13 21:16:08 PDT 2008
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+return number of entries from getxxxTreePtr methods
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 13 21:16:07 PDT 2008
 ntupleWriterSvc/cmt
 
