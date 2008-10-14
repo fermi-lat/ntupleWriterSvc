@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 13 21:16:07 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+return number of entries from getxxxTreePtr methods
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-04-00-00, operation: add
 Package: ntupleWriterSvc
