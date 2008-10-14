@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.64 2008/10/01 02:48:49 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.65 2008/10/07 17:58:26 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -168,11 +168,11 @@ public:
 
 
     //! Returns a pointer to the requested input TTree
-    virtual bool getInputTreePtr(void*& treePtr,
+    virtual long long getInputTreePtr(void*& treePtr,
                          const std::string& tupleName="MeritTuple");
 
     //! Returns a pointer to the requested output TTree
-    virtual bool getOutputTreePtr(void*& treePtr,
+    virtual long long getOutputTreePtr(void*& treePtr,
                          const std::string& tupleName="MeritTuple");
 
     //! Save the row in the output file
@@ -829,7 +829,7 @@ bool RootTupleSvc::storeRowFlag(const std::string& tupleName, bool flag)
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-bool RootTupleSvc::getInputTreePtr(void*& pval, const std::string & tupleName)
+long long RootTupleSvc::getInputTreePtr(void*& pval, const std::string & tupleName)
 {
     MsgStream log(msgSvc(),name());
 
@@ -845,18 +845,18 @@ bool RootTupleSvc::getInputTreePtr(void*& pval, const std::string & tupleName)
 
         pval = (void *)(ch->GetTree());
         saveDir->cd();
-        return true;
+        return ch->GetEntries();
 
     }
 
     log << MSG::INFO << "Did not find tree" << treename << endreq;
     pval = 0;
     saveDir->cd();
-    return false;
+    return -1;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-bool RootTupleSvc::getOutputTreePtr(void*& pval, const std::string & tupleName)
+long long RootTupleSvc::getOutputTreePtr(void*& pval, const std::string & tupleName)
 {
     MsgStream log(msgSvc(),name());
 
@@ -872,14 +872,14 @@ bool RootTupleSvc::getOutputTreePtr(void*& pval, const std::string & tupleName)
 
         pval = (void *)t;
         saveDir->cd();
-        return true;
+        return t->GetEntries();
 
     }
 
     log << MSG::INFO << "Did not find tree" << treename << endreq;
     pval = 0;
     saveDir->cd();
-    return false;
+    return -1;
 }
 
 
