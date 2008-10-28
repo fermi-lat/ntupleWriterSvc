@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: ecephas  Tue Oct 28 09:59:34 PDT 2008
+GlastRelease-scons/ntupleWriterSvc
+
+Modified Files:
+	ntupleWriterSvcLib.py 
+Log Message:
+Changed 
+	env.Tool('addLibrary', library = 'ntupleWriterSvc')
+to
+        env.Tool('addLibrary', library = ['ntupleWriterSvc'])
+
+Added the following:
+     env.Tool('facilitiesLib')
+     env.Tool('addLibrary', library = env['gaudiLibs'])
+     env.Tool('addLibrary', library = env['rootLibs'])
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-04-01-00, operation: add
 Package: ntupleWriterSvc
