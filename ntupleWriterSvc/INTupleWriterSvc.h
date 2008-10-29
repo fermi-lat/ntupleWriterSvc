@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.22 2008/10/07 18:00:28 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.23 2008/10/14 04:16:08 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -10,7 +10,7 @@
 #include <string>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  8 ,0); 
+static const InterfaceID IID_INTupleWriterSvc("INTupleWriterSvc",  9 ,0); 
 
 /*! @class INTupleWriterSvc
  @brief Proper Gaudi abstract interface class for the ntupleWriterSvc 
@@ -112,6 +112,10 @@ public:
    /// see TTree::SetBasketSize
     virtual void setBufferSize(const std::string& tupleName, int bufferSize, 
                          const std::string& branchName=std::string("*")) = 0;
+
+
+
+    virtual bool getInputFileList(std::vector<std::string> &fileList) = 0;
 
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_INTupleWriterSvc; }
