@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Oct 29 07:28:28 PDT 2008
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add getIntputFileList method
+    *
+------------------------------------------------------------
 User: ecephas  Tue Oct 28 09:59:34 PDT 2008
 GlastRelease-scons/ntupleWriterSvc
 
