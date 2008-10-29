@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.65 2008/10/07 17:58:26 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.66 2008/10/14 04:16:09 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -182,6 +182,12 @@ public:
     /// for whole TTree by setting bname="*"
     virtual void setBufferSize(const std::string& tupleName, int bufSize, 
                                const std::string& bname=std::string("*"));
+
+    virtual bool getInputFileList(std::vector<std::string> &fileList) {
+          fileList = m_inFileList;
+          if (m_inFileList.size() > 0) return true;
+          return false;
+    }
 
 private:
     /// Allow only SvcFactory to instantiate the service.
