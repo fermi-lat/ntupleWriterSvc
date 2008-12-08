@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:40:41 PST 2008
+GlastRelease-scons/ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for ntupleWriterSvc v4r2 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-04-02-00, operation: add
 Package: ntupleWriterSvc
