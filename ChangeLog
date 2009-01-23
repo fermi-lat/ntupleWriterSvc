@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+TAG
+Tag name: ntupleWriterSvc-04-02-00, operation: mov
+Package: ntupleWriterSvc
+User: glastrm  Thu Jan 22 16:31:37 2009
+Files:
+  ntupleWriterSvc/SConscript  1.10
+  ntupleWriterSvc/SConscript  1.10
+  ntupleWriterSvc/SConscript  1.10
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:07:11 PST 2009
 GlastRelease-scons/ntupleWriterSvc
 
