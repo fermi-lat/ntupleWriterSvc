@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.6 2008/10/07 18:30:10 glastrm Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/ntupleWriterSvc/SConscript,v 1.7 2008/10/14 04:30:28 glastrm Exp $ 
 # Authors: H. Kelly <heather@slac.stanford.edu>
-# Version: ntupleWriterSvc-04-01-00
+# Version: ntupleWriterSvc-04-02-00
 import os
 Import('baseEnv')
 Import('listFiles')
@@ -18,3 +18,7 @@ test_ntupleWriterSvc = progEnv.GaudiProgram('test_ntupleWriterSvc',['src/test/wr
 
 progEnv.Tool('registerObjects', package = 'ntupleWriterSvc', libraries = [ntupleWriterSvc], testApps = [test_ntupleWriterSvc], \
 includes = listFiles(['ntupleWriterSvc/*.h']))
+
+
+
+
