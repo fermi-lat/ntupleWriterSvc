@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.66 2008/10/14 04:16:09 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.67 2008/10/29 14:28:28 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -73,6 +73,9 @@ public:
 
     /// Query interface - required of all Gaudi services
     virtual StatusCode queryInterface( const InterfaceID& riid, void** ppvUnknown );
+
+    /// Returns the current merit version number
+    virtual int getMeritVersion() { return m_meritVersion; }
 
 // LSR 14-Jul-08 code for ntuple types
 
@@ -261,11 +264,22 @@ private:
     Char_t test; // to see what this is
 
     int m_updateCount;
+
+    /// Version number of merit stored in file header
+    /// This value should be incremented by developers when the contents of
+    /// merit is modified.
+    static int m_meritVersion;
 };
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // declare the service factories for the ntupleWriterSvc
 static SvcFactory<RootTupleSvc> a_factory;
 const ISvcFactory& RootTupleSvcFactory = a_factory;
+
+// Set Merit Version 
+// This value must be updated by hand when the contents of merit are modified
+int RootTupleSvc::m_meritVersion = 1;
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //         Implementation of RootTupleSvc methods
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
