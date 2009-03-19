@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.67 2008/10/29 14:28:28 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.68 2009/03/19 14:47:43 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -76,6 +76,12 @@ public:
 
     /// Returns the current merit version number
     virtual int getMeritVersion() { return m_meritVersion; }
+    /// Set merit Version 
+    /// Do not use willy nilly!  The intent is for the developer to set the
+    /// MeritVersion by setting the static variable m_meritVersion in the
+    /// code, but this method is provided as a mechanism to override the value
+    /// that has been hard-coded
+    virtual void setMeritVersion(int v) { m_meritVersion = v; }
 
 // LSR 14-Jul-08 code for ntuple types
 
@@ -269,6 +275,8 @@ private:
     /// This value should be incremented by developers when the contents of
     /// merit is modified.
     static int m_meritVersion;
+  
+    int m_joMeritVersion;
 };
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // declare the service factories for the ntupleWriterSvc
@@ -306,6 +314,7 @@ RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("JobInfo", m_jobInfo=""); // string, if present, will write out single TTree entry
     declareProperty("BufferSize",m_bufferSize=32000);
     declareProperty("StartingIndex",m_nextEvent=0);
+    declareProperty("MeritVersion",m_joMeritVersion=0);
 
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -387,6 +396,8 @@ StatusCode RootTupleSvc::initialize ()
     curdir->cd(); // restore previous directory
 
     m_updateCount = 0;
+
+    if (m_joMeritVersion != 0) setMeritVersion(m_joMeritVersion);
 
     return status;
 }

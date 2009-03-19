@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.24 2008/10/29 14:28:28 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.25 2009/03/19 14:47:43 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -108,6 +108,8 @@ public:
 
     //! Returns merit version
     virtual int getMeritVersion() = 0;
+    //! Set merit version
+    virtual void setMeritVersion(int v) = 0;
 
     //! Allow clients to set basket size on a per branch basis, or for
     /// all branches by setting branchName="*" or branchName="xxx*"
