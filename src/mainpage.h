@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.11 2008/01/18 20:05:12 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/mainpage.h,v 1.12 2008/09/25 03:35:42 heather Exp $
 // Mainpage for doxygen
 
 /** @mainpage package ntupleWriterSvc
@@ -58,6 +58,8 @@
  * @param RootTupleSvc.JobInfoTreeName 
  * Default ["jobinfo"]
  * Name of the tree to contain the jobinfo data
+ * @param RootTupleSvc.MeritVersion
+ * Default 0 which results in using the initialized value set in RootTupleSvc
  * @param RootTupleSvc.JobInfo  
  * Default "" (empty string)
  * string of the form "a=99, b=100" of names, values to add to the jobinfo tree
