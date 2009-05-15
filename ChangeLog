@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu May 14 19:31:15 PDT 2009
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+throw exception when attempting to access disabled branch
+    *
+------------------------------------------------------------
+User: heather  Thu May 14 19:31:15 PDT 2009
 ntupleWriterSvc/doc
 
 Modified Files:
