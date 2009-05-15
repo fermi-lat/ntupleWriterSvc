@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu May 14 19:31:15 PDT 2009
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+throw exception when attempting to access disabled branch
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-01-00, operation: add
 Package: ntupleWriterSvc
