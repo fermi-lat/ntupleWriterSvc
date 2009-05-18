@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon May 18 06:32:31 PDT 2009
+ntupleWriterSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+check output tree if input tree has branch disabled
+    *
+------------------------------------------------------------
+User: heather  Mon May 18 06:32:31 PDT 2009
 ntupleWriterSvc/cmt
 
 Modified Files:
