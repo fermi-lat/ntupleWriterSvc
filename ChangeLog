@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon May 18 06:32:31 PDT 2009
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+check output tree if input tree has branch disabled
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-02-01, operation: add
 Package: ntupleWriterSvc
