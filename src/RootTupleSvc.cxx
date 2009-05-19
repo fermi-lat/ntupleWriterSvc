@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.72 2009/05/15 03:05:04 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.73 2009/05/18 13:32:31 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -1006,7 +1006,8 @@ std::string RootTupleSvc::getItem(const std::string & tupleName,
 
     // if the input branch is disabled, or we did not find the leaf, 
     // look in the output tree
-    if ( (!inputChain->second->GetBranchStatus(itemName.c_str())) ||
+    if ( ( (inputChain != m_inChain.end()) && 
+           (!inputChain->second->GetBranchStatus(itemName.c_str())) ) ||
          (leaf == 0) )
         leaf = t->GetLeaf(itemName.c_str());
     else
