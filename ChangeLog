@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 19 06:56:19 PDT 2009
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for the normal case with no input files
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-03-00, operation: add
 Package: ntupleWriterSvc
