@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Tue May 19 07:30:15 PDT 2009
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v5r3p1, operation: add
 Package: ntupleWriterSvc
