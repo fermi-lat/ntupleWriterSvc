@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.25 2009/03/19 14:47:43 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.26 2009/03/19 15:50:40 heather Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -93,7 +93,8 @@ public:
     
     */
     virtual std::string getItem(const std::string & tupleName, 
-        const std::string& itemName, void*& pointer) =0;
+                                const std::string& itemName, void*& pointer,
+                                const void* treePtr = 0) = 0;
 
     //! Provide access to input TTree pointer given tuple name
     virtual long long getInputTreePtr(void*& treePtr, 
