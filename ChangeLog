@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri May 22 10:43:47 PDT 2009
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Kludge in a way to allow user to pick the tree they want to have "getItem" use. Parental Warning! Do not let your children see this!
+    *
+------------------------------------------------------------
 User: usher  Fri May 22 10:43:46 PDT 2009
 ntupleWriterSvc/ntupleWriterSvc
 
