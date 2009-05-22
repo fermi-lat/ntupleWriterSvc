@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri May 22 10:43:46 PDT 2009
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+Kludge in a way to allow user to pick the tree they want to have "getItem" use. Parental Warning! Do not let your children see this!
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-03-01, operation: add
 Package: ntupleWriterSvc
