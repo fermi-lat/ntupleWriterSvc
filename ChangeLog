@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Aug 18 20:52:01 PDT 2009
+ntupleWriterSvc/src
+
+Modified Files:
+      Tag: GlastReleasev15r47p15
+	RootTupleSvc.cxx 
+Log Message:
+pick up mods from v5r4 so TTree* can be chosen by ClassifyAlg when there are input merit files
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 18 20:52:00 PDT 2009
 ntupleWriterSvc/ntupleWriterSvc
 
