@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Aug 18 20:52:00 PDT 2009
+ntupleWriterSvc/cmt
+
+Modified Files:
+      Tag: GlastReleasev15r47p15
+	requirements 
+Log Message:
+pick up mods from v5r4 so TTree* can be chosen by ClassifyAlg when there are input merit files
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-00, operation: add
 Package: ntupleWriterSvc
