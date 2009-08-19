@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.62 2008/09/25 03:35:42 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.63 2008/09/29 17:30:48 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -156,7 +156,7 @@ public:
 
     // Had to remove const due to reprocessing needs, and the requirement to store branch pointers in some cases
     virtual std::string getItem(const std::string & tupleName, 
-        const std::string& itemName, void*& pval);
+        const std::string& itemName, void*& pval, const void* treePtr=0);
 
     /** store row flag by tuple Name option, retrive currrent
     @param tupleName Name of the tuple (TTree for RootTupleSvc implemetation)
@@ -166,6 +166,8 @@ public:
     */
     virtual bool storeRowFlag(const std::string& tupleName, bool flag);
 
+    virtual long long getOutputTreePtr(void*& treePtr,
+              const std::string& tupleName="MeritTuple");
 
     //! Save the row in the output file
     virtual void saveRow(const std::string& tupleName);
@@ -820,10 +822,33 @@ bool RootTupleSvc::storeRowFlag(const std::string& tupleName, bool flag)
     return t;
 }
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+long long RootTupleSvc::getOutputTreePtr(void*& pval, const std::string& tupleName)
+{
+  MsgStream log(msgSvc(),name());
+  std::string treename=tupleName.empty()?m_treename.value():tupleName;
+  TDirectory *saveDir = gDirectory;
+
+  std::map<std::string,TTree*>::const_iterator treeit=m_tree.find(treename);
+  if (treeit != m_tree.end()) {
+    // Found the TChain now return
+    TTree* t = treeit->second;
+    t->GetCurrentFile()->cd();
+    pval = (void*)t;
+    saveDir->cd();
+    return t->GetEntries();
+  }
+
+  log << MSG::INFO << "Did not find tree" << treename << endreq;
+  pval = 0;
+  saveDir->cd();
+  return -1;
+}
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 std::string RootTupleSvc::getItem(const std::string & tupleName, 
-                                   const std::string& itemName, void*& pval)
+                                   const std::string& itemName, void*& pval,
+                                   const void* treePtr)
 {
     // Hack for inputChain required for reprocessing option
 
@@ -851,14 +876,21 @@ std::string RootTupleSvc::getItem(const std::string & tupleName,
     bool foundInChain = false;
     // Check potential input tree 
     std::map<std::string, TChain*>::const_iterator inputChain = m_inChain.find(treename);
-    if (inputChain != m_inChain.end()) 
-        leaf = inputChain->second->GetLeaf(itemName.c_str());
-    
+    // if we supplied a tree pointer, use that
+    if (treePtr) {
+        const TTree* tempConstPtr = reinterpret_cast<const TTree*>(treePtr);
+        TTree* tempPtr = const_cast<TTree*>(tempConstPtr);
+        leaf = tempPtr->GetLeaf(itemName.c_str());
+    } else {
+        // Check potential input tree
+        if (inputChain != m_inChain.end()) 
+            leaf = inputChain->second->GetLeaf(itemName.c_str());
 
-    if (leaf == 0) 
-        leaf = t->GetLeaf(itemName.c_str());
-    else
-        foundInChain = true;
+        if (leaf == 0) 
+            leaf = t->GetLeaf(itemName.c_str());
+        else
+            foundInChain = true;
+    }
 
     if( leaf==0)
         throw std::invalid_argument(std::string("RootTupleSvc::getItem: did not find tuple or leaf: ")+ itemName);
