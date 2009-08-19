@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Aug 18 20:56:19 PDT 2009
+ntupleWriterSvc
+
+Modified Files:
+      Tag: GlastReleasev15r47p15
+	SConscript 
+Log Message:
+update SConscript version
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 18 20:52:01 PDT 2009
 ntupleWriterSvc/src
 
