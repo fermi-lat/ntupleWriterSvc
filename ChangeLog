@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 14 05:23:19 PDT 2009
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+warnings
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-03-24-01-gr1, operation: add
 Package: ntupleWriterSvc
