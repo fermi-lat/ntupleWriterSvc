@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.74 2009/05/19 13:56:19 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.75 2009/05/22 17:43:47 usher Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -478,7 +478,7 @@ bool RootTupleSvc::getTree(std::string& treeName, TTree*& t)
             for (iBranch=0;iBranch<numBranches;iBranch++) {
                 std::string branchName(((TBranch*)(brCol->At(iBranch)))->GetName());
                 std::string leafName = branchName;
-                int index = leafName.find("[");
+                size_t index = leafName.find("[");
                 if(index!=std::string::npos) leafName = leafName.substr(0,index); 
                 log << MSG::DEBUG << "setting branch: " << branchName
                     << " and Leaf: " << leafName << endreq;
@@ -790,7 +790,7 @@ StatusCode RootTupleSvc::checkForNAN( TTree* t, MsgStream& log)
         TLeaf* leaf = (TLeaf*)(*b->GetListOfLeaves())[0]; 
         double val = leaf->GetValue();
         log << MSG::DEBUG << leaf->GetName() << " val: " << val << endreq;
-        void* valpointer = leaf->GetValuePointer();
+        // HMK Unused? void* valpointer = leaf->GetValuePointer();
         if( ! isFinite(val) ){
             log << MSG::DEBUG  << "Tuple item " << leaf->GetName() << " is not finite!" << endreq;
             m_badMap[leaf->GetName()]++;
