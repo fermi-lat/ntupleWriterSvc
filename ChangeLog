@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov  9 15:53:43 PST 2009
+GlastRelease-scons/ntupleWriterSvc
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-01, operation: add
 Package: ntupleWriterSvc
