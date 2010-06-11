@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:46:54 PDT 2010
+GlastRelease-scons/ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+updates for SCons build
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-02, operation: add
 Package: ntupleWriterSvc
