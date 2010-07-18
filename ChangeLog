@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Sat Jul 17 17:26:27 PDT 2010
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Code to allow random access to ntuple rows (events) used by HepRepSvc
+
+    *
+------------------------------------------------------------
+User: lsrea  Sat Jul 17 17:26:27 PDT 2010
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
