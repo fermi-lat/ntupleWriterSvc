@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat Jul 17 17:26:27 PDT 2010
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+Code to allow random access to ntuple rows (events) used by HepRepSvc
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-03, operation: add
 Package: ntupleWriterSvc
