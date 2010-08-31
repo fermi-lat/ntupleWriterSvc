@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Aug 30 20:21:20 PDT 2010
+ntupleWriterSvc/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+migrate to Gaudi v21r7
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-04, operation: add
 Package: ntupleWriterSvc
