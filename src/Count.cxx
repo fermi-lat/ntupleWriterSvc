@@ -15,7 +15,7 @@
 /** @class Count
  * @brief Alg that counts and records the value in the jobinfo tuple
  * 
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/Count.cxx,v 1.1 2006/12/25 01:32:37 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/Count.cxx,v 1.2 2006/12/26 00:17:40 burnett Exp $
 */
 class Count : public Algorithm
 {   
@@ -32,8 +32,9 @@ private:
 };
 
 //  factory stuff
-static const AlgFactory<Count>  Factory;
-const IAlgFactory& CountFactory = Factory;
+//static const AlgFactory<Count>  Factory;
+//const IAlgFactory& CountFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(Count);
 
 std::map<std::string,int> Count::s_map;
 
