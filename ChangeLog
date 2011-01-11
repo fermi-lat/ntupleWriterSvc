@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Tue Jan 11 05:34:42 PST 2011
+ntupleWriterSvc/src/test
+
+Modified Files:
+	scanTuple.C 
+Log Message:
+update: scans really all leaves now, but ignores auditor variables.
+
+    *
+------------------------------------------------------------
 User: kuss  Tue Jan 11 01:28:01 PST 2011
 ntupleWriterSvc/src/test
 
