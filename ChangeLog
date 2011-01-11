@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kuss  Tue Jan 11 01:28:01 PST 2011
+ntupleWriterSvc/src/test
+
+Modified Files:
+	scanTuple.C 
+Log Message:
+remove weird formatting
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-05-04-05, operation: add
 Package: ntupleWriterSvc
