@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kadrlica  Mon May 30 02:13:41 PDT 2011
+ntupleWriterSvc/src
+
+Modified Files:
+	RootTupleSvc.cxx 
+Log Message:
+Added makeFriends for linking output tuples through TTree friendship
+    *
+------------------------------------------------------------
 User: kuss  Tue Jan 11 05:34:42 PST 2011
 ntupleWriterSvc/src/test
 
