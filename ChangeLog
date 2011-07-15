@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Jul 15 16:33:55 PDT 2011
+ntupleWriterSvc/ntupleWriterSvc
+
+Modified Files:
+	INTupleWriterSvc.h 
+Log Message:
+add getNumberOfEvents to implement WIRED interface
+
+    *
+------------------------------------------------------------
 User: kadrlica  Mon May 30 02:13:41 PDT 2011
 ntupleWriterSvc/src
 
