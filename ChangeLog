@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 17 13:19:05 PDT 2011
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+let's try a memory resident ntuple
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr02, operation: add
 Package: ntupleWriterSvc
