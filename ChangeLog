@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Aug 17 13:19:05 PDT 2011
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+let's try a memory resident ntuple
+    *
+------------------------------------------------------------
+User: heather  Wed Aug 17 13:19:05 PDT 2011
 ntupleWriterSvc
 
 Modified Files:
