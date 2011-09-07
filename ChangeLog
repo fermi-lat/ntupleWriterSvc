@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: ntupleWriterSvc
+User: heather  Wed Sep  7 10:46:11 2011
+Files:
+  ntupleWriterSvc/.cvsignore  1.4
+  ntupleWriterSvc/ChangeLog  1.600
+  ntupleWriterSvc/SConscript  1.26
+  ntupleWriterSvc/ntupleWriterSvcLib.py  1.2
+  ntupleWriterSvc/cmt/.cvsignore  1.2
+  ntupleWriterSvc/cmt/requirements  1.91
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: ntupleWriterSvc
 User: glastrm  Tue Sep  6 14:17:06 2011
