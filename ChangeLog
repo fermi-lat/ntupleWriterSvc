@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Nov 18 11:06:45 PST 2011
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging Tracy's patch
+    *
+------------------------------------------------------------
+User: heather  Fri Nov 18 11:06:45 PST 2011
 ntupleWriterSvc
 
 Modified Files:
