@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Nov 18 11:06:45 PST 2011
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+tagging Tracy's patch
+    *
+------------------------------------------------------------
 User: usher  Fri Nov 18 09:37:35 PST 2011
 ntupleWriterSvc/src
 
