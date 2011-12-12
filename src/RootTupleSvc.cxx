@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.80 2011/08/17 20:19:05 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.81 2011/11/18 17:37:35 usher Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -303,8 +303,9 @@ private:
 };
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // declare the service factories for the ntupleWriterSvc
-static SvcFactory<RootTupleSvc> a_factory;
-const ISvcFactory& RootTupleSvcFactory = a_factory;
+//static SvcFactory<RootTupleSvc> a_factory;
+//const ISvcFactory& RootTupleSvcFactory = a_factory;
+DECLARE_SERVICE_FACTORY(RootTupleSvc);
 
 // Set Merit Version 
 // This value must be updated by hand when the contents of merit are modified
