@@ -15,7 +15,7 @@
 /** @class WriteTupleAlg
  * @brief Test routine for the ntupleWriterSvc
  * 
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/WriteTupleAlg.cxx,v 1.2 2002/04/08 21:14:02 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/ntupleWriterSvc/src/WriteTupleAlg.cxx,v 1.3.658.1 2010/10/08 16:43:48 heather Exp $
 */
 class WriteTupleAlg : public Algorithm
 {   
@@ -32,8 +32,9 @@ private:
 };
 
 //  factory stuff
-static const AlgFactory<WriteTupleAlg>  Factory;
-const IAlgFactory& WriteTupleAlgFactory = Factory;
+//static const AlgFactory<WriteTupleAlg>  Factory;
+//const IAlgFactory& WriteTupleAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(WriteTupleAlg);
 
 
 WriteTupleAlg::WriteTupleAlg(const std::string& name, ISvcLocator* pSvcLocator) 

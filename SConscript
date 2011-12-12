@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.26 2011/08/17 20:19:05 heather Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/ntupleWriterSvc/SConscript,v 1.27 2011/11/18 19:06:45 heather Exp $ 
 # Authors: H. Kelly <heather@slac.stanford.edu>
-# Version: ntupleWriterSvc-06-00-01
+# Version: ntupleWriterSvc-06-01-00
 import os
 Import('baseEnv')
 Import('listFiles')
@@ -10,8 +10,8 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='ntupleWriterSvc', toBuild='component')
-ntupleWriterSvc =libEnv.SharedLibrary('ntupleWriterSvc',
-                                      listFiles(['src/*.cxx','src/Dll/*.cxx']))
+ntupleWriterSvc =libEnv.ComponentLibrary('ntupleWriterSvc',
+                                         listFiles(['src/*.cxx']))
 
 progEnv.Tool('ntupleWriterSvcLib')
 
