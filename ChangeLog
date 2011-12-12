@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:58:11 PST 2011
+GlastRelease-scons/ntupleWriterSvc/src
+
+Modified Files:
+	Count.cxx RootTupleSvc.cxx WriteTupleAlg.cxx 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:58:11 PST 2011
 GlastRelease-scons/ntupleWriterSvc/doc
 
 Modified Files:
