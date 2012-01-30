@@ -1,6 +1,6 @@
 package ntupleWriterSvc
-version v5r4p3
-#$Id: requirements,v 1.86 2009/11/10 01:25:47 jrb Exp $
+version v5r4p3gr01
+#$Id: requirements,v 1.93 2011/12/12 20:58:11 heather Exp $
 author H. Kelly <heather@slac.stanford.edu>
 branches src doc
 
@@ -16,15 +16,17 @@ apply_pattern packageShr
 
 private
 # get flags to build shared library
+use RootmapPolicy * GlastPolicy
 
 apply_pattern package_Cshlibflags
-private
 
 use gr_app v*
 
 apply_pattern package_headers
 
-library ntupleWriterSvc  *.cxx Dll/*.cxx ${ntupleWriterSvc_headers}
+library ntupleWriterSvc  *.cxx ${ntupleWriterSvc_headers}
+
+apply_pattern generate_rootmap library=ntupleWriterSvc
 
 # build this for testing
 
