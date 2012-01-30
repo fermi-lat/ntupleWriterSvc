@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Jan 30 09:48:32 PST 2012
+ntupleWriterSvc/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	Count.cxx RootTupleSvc.cxx WriteTupleAlg.cxx 
+Log Message:
+Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Jan 30 09:48:32 PST 2012
 ntupleWriterSvc/doc
 
 Modified Files:
