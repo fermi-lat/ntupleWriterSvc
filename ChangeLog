@@ -1,5 +1,30 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-rp03, operation: add
+Package: ntupleWriterSvc
+User: heather  Tue Apr  3 01:20:56 2012
+Files:
+  ntupleWriterSvc/.cvsignore  1.4
+  ntupleWriterSvc/ChangeLog  1.554
+  ntupleWriterSvc/SConscript  1.22
+  ntupleWriterSvc/ntupleWriterSvcLib.py  1.2
+  ntupleWriterSvc/cmt/.cvsignore  1.2
+  ntupleWriterSvc/cmt/requirements  1.87
+  ntupleWriterSvc/doc/release.notes  1.83
+  ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h  1.27
+  ntupleWriterSvc/src/WriteTupleAlg.cxx  1.3
+  ntupleWriterSvc/src/mainpage.h  1.14
+  ntupleWriterSvc/src/Count.cxx  1.2
+  ntupleWriterSvc/src/RootTupleSvc.cxx  1.76
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_load.cxx  1.7
+  ntupleWriterSvc/src/Dll/ntupleWriterSvc_dll.cxx  1.4
+  ntupleWriterSvc/src/test/writeJunkAlg.cxx  1.20
+  ntupleWriterSvc/src/test/jobOptions.txt  1.11
+  ntupleWriterSvc/src/test/scanTuple.C  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-rp02, operation: add
 Package: ntupleWriterSvc
 User: heather  Tue Mar 27 09:25:02 2012
