@@ -1,7 +1,7 @@
 /** @file INTupleWriterSvc.h
     @brief declare abstract INtupleWriterSvc
 
-    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.26 2009/03/19 15:50:40 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/ntupleWriterSvc/INTupleWriterSvc.h,v 1.27 2009/05/22 17:43:46 usher Exp $
 */
 #ifndef _H_INTupleWriterSvc_
 #define _H_INTupleWriterSvc_
@@ -121,6 +121,10 @@ public:
 
 
     virtual bool getInputFileList(std::vector<std::string> &fileList) = 0;
+
+    virtual bool setIndex(long long) = 0;
+    virtual long long index() = 0;
+    virtual long long getNumberOfEvents() = 0;
 
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_INTupleWriterSvc; }
