@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Jun  7 08:41:51 PDT 2012
+ntupleWriterSvc/doc
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	release.notes 
+Log Message:
+patch for P8 merge
+    *
+------------------------------------------------------------
+User: heather  Thu Jun  7 08:41:51 PDT 2012
 ntupleWriterSvc/cmt
 
 Modified Files:
