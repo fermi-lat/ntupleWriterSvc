@@ -4,7 +4,7 @@
  *
  * Special service that directly writes ROOT tuples
  * It also allows multiple TTree's in the root file: see the addItem (by pointer) member function.
- * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.76 2009/09/14 12:23:20 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/src/RootTupleSvc.cxx,v 1.76.20.1 2012/01/30 17:48:32 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -199,6 +199,10 @@ public:
           return false;
     }
 
+    virtual bool setIndex(Long64_t i);
+    virtual Long64_t index();
+    virtual Long64_t getNumberOfEvents();
+
 private:
     /// Allow only SvcFactory to instantiate the service.
     friend class SvcFactory<RootTupleSvc>;
@@ -257,6 +261,8 @@ private:
     /// If reading an input tuple also, then this is next event
     long long m_nextEvent;
 
+    long long m_nevents;
+
     /// if set, store all ttrees 
     bool m_storeAll;
 
@@ -299,7 +305,7 @@ int RootTupleSvc::m_meritVersion = 1;
 //         Implementation of RootTupleSvc methods
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 RootTupleSvc::RootTupleSvc(const std::string& name,ISvcLocator* svc)
-: Service(name,svc), m_nextEvent(0), m_trials(0), 
+: Service(name,svc), m_nextEvent(0), m_nevents(0), m_trials(0), 
   m_badEventCount(0)
 {
     // declare the properties and set defaults
@@ -459,10 +465,10 @@ bool RootTupleSvc::getTree(std::string& treeName, TTree*& t)
             // add new TChain to the map
             m_inChain[treeName] = ch;
             // call GetEntries to load the headers of the TFiles
-            long long nevents = ch->GetEntries();
+            m_nevents = ch->GetEntries();
             log << MSG::INFO << "Number of events in input files = " 
-                << nevents << " StartingIndex: " << m_nextEvent << endreq;
-            if ((m_nextEvent > nevents-1) || (m_nextEvent < 0)) {
+                << m_nevents << " StartingIndex: " << m_nextEvent << endreq;
+            if ((m_nextEvent > m_nevents-1) || (m_nextEvent < 0)) {
                 log << MSG::WARNING << "StartingIndex invalid, resetting "
                     << m_nextEvent << " to zero" << endreq;
                 m_nextEvent = 0;
@@ -1131,3 +1137,14 @@ bool RootTupleSvc::fileExists( const std::string & filename )
   saveDir->cd();
   return fileExists ;
  }  
+
+bool RootTupleSvc::setIndex(Long64_t i){
+    m_nextEvent = i;
+    return true;
+}
+
+Long64_t RootTupleSvc::index() { return m_nextEvent; }
+
+Long64_t RootTupleSvc::getNumberOfEvents() {
+    return m_nevents;
+}

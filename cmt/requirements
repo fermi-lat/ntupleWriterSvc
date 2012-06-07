@@ -1,6 +1,6 @@
 package ntupleWriterSvc
-version v5r4p3gr01
-#$Id: requirements,v 1.93 2011/12/12 20:58:11 heather Exp $
+version v5r4p3gr02
+#$Id: requirements,v 1.87.2.1 2012/01/30 17:48:32 heather Exp $
 author H. Kelly <heather@slac.stanford.edu>
 branches src doc
 

@@ -2,10 +2,12 @@
  * Coordinator:H.Kelly
  *    * EOH *
 
+ ntupleWriterSvc-05-04-03-gr02 07-Jun-2012 hmk merge in P8 updates
  ntupleWriterSvc-05-04-03-gr01 30-Jan-2012 hmk Gaudi v21r7
  ntupleWriterSvc-05-04-03 13-Jun-2010    jrb upgrades for SCons builds
  ntupleWriterSvc-05-04-02 09-Nov-2009    jrb Updates for SCons
  @verbatim
+
  * v5r4p1  13-Sep-2009 HMK   Warnings
  * v5r4    22-May-2009  TU   Add treePtr parameter to getItem to force the
  *         tree used to obtain branch pointers
