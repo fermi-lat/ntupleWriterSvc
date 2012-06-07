@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Jun  7 08:41:51 PDT 2012
+ntupleWriterSvc/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	RootTupleSvc.cxx 
+Log Message:
+patch for P8 merge
+    *
+------------------------------------------------------------
+User: heather  Thu Jun  7 08:41:51 PDT 2012
 ntupleWriterSvc/ntupleWriterSvc
 
 Modified Files:
