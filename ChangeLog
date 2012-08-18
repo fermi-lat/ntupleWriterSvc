@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 17 17:32:15 PDT 2012
+GlastRelease-scons/ntupleWriterSvc
+
+Modified Files:
+	ntupleWriterSvcLib.py 
+Log Message:
+support no-install headers on Windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-02, operation: add
 Package: ntupleWriterSvc
