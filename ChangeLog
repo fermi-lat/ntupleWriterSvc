@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon May  6 09:34:48 PDT 2013
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag to force LATEST build
+    *
+------------------------------------------------------------
+User: heather  Mon May  6 09:34:48 PDT 2013
 ntupleWriterSvc
 
 Modified Files:
