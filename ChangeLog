@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: heather  Mon May  6 09:34:48 PDT 2013
-ntupleWriterSvc
-
-Modified Files:
-	SConscript 
-Log Message:
-tag to force LATEST build
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp43, operation: add
 Package: ntupleWriterSvc
