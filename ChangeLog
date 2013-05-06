@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon May  6 14:55:08 PDT 2013
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+another forced tag for LATEST build
+    *
+------------------------------------------------------------
 TAG
 Tag name: ntupleWriterSvc-06-02-01, operation: add
 Package: ntupleWriterSvc
