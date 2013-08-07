@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Aug  7 11:07:38 PDT 2013
+ntupleWriterSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+testing rhel5-32 builds
+    *
+------------------------------------------------------------
+User: heather  Wed Aug  7 11:07:38 PDT 2013
 ntupleWriterSvc
 
 Modified Files:
