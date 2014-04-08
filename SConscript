@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.29 2012/08/20 19:07:59 jrb Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/ntupleWriterSvc/SConscript,v 1.34 2014/04/08 22:14:56 heather Exp $ 
 # Authors: H. Kelly <heather@slac.stanford.edu>
 # Version: ntupleWriterSvc-06-02-01
 import os
