@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr  8 15:14:56 PDT 2014
+ntupleWriterSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+fix SConscript version
+    *
+------------------------------------------------------------
 User: glastrm  Thu Apr  3 14:30:32 PDT 2014
 ntupleWriterSvc
 
